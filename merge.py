@@ -133,7 +133,7 @@ def process_clash(data, index):
                     obfs_param = proxy.get("obfs-param", "")
                     obfs_param = base64.b64encode(obfs_param.encode()).decode()
                     # 生成URL
-                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_meta_{index}&protoparam{protocol_param}=&obfsparam={obfs_param}"
+                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_meta_{index}&protoparam{protocol_param}=&obfsparam={obfs_param}#ssr_{index}"
                     
                     ssr_source=base64.b64encode(ssr_source.encode()).decode()
                     ssr_meta = f"ssr://{ssr_source}"
@@ -145,7 +145,7 @@ def process_clash(data, index):
                     password = proxy.get("password", "")
                     cipher = proxy.get("cipher", "")
                     # 生成URL
-                    ss_source=f"{cipher}:{password}@{server}:{port}"
+                    ss_source=f"{cipher}:{password}@{server}:{port}#ss_{index}"
                     
                     ss_source=base64.b64encode(ss_source.encode()).decode()
                     ss_meta = f"ss://{ss_source}"
@@ -297,7 +297,7 @@ process_urls('./urls/clash_urls.txt', process_clash)
 process_urls('./urls/sb_urls.txt', process_sb)
 
 # 处理 naive URLs
-process_urls('./urls/naiverproxy_urls.txt', process_naive)
+# process_urls('./urls/naiverproxy_urls.txt', process_naive)
 
 # 处理 hysteria URLs
 process_urls('./urls/hysteria_urls.txt', process_hysteria)

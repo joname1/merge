@@ -25,7 +25,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: 油管-绵阿羊
+  - name: DEMO
     type: trojan
     server: a
     port: 1
@@ -52,7 +52,7 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - 油管-绵阿羊
+      - DEMO
       - WARP
       - 自动选择
       - 负载均衡
@@ -71,17 +71,17 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 油管-绵阿羊
+      - DEMO
 
   - name: 手动选择
     type: select
     proxies:
-      - 油管-绵阿羊
+      - DEMO
 
   - name: 负载均衡
     type: load-balance #负载均衡
     proxies:
-      - 油管-绵阿羊
+      - DEMO
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     #lazy: true
