@@ -135,7 +135,7 @@ def process_clash(data, index):
                     # 生成URL
                     ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_meta_{index}&protoparam{protocol_param}=&obfsparam={obfs_param}#ssr_{index}"
                     
-                    ssr_source=base64.b64encode(ssr_source.encode()).decode()
+                    #ssr_source=base64.b64encode(ssr_source.encode()).decode()
                     ssr_meta = f"ssr://{ssr_source}"
                     merged_proxies.append(ssr_meta)
                 #目前仅支持最原始版本ss，无插件支持
@@ -147,7 +147,7 @@ def process_clash(data, index):
                     # 生成URL
                     ss_source=f"{cipher}:{password}@{server}:{port}#ss_{index}"
                     
-                    ss_source=base64.b64encode(ss_source.encode()).decode()
+                    #ss_source=base64.b64encode(ss_source.encode()).decode()
                     ss_meta = f"ss://{ss_source}"
                     merged_proxies.append(ss_meta)
 def process_naive(data, index):
