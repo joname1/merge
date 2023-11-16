@@ -328,7 +328,7 @@ try:
     # base64 to url
     decoded_content = base64.b64decode(merged_content1.encode("utf-8")).decode("utf-8")
     # 最终合并
-    final_merge = base64.b64encode((merged_content + decoded_content).encode("utf-8")).decode("utf-8")
+    final_merge = base64.b64encode((merged_content + '\n' + decoded_content).encode("utf-8")).decode("utf-8")
 
     with open("./sub/ssr_base64.txt", "w") as file:
         file.write(final_merge)
