@@ -29,9 +29,9 @@ proxies:
     type: trojan
     server: a
     port: 1
-    password: 72ac875a-f5b9-461e-a7a4-942b468b0d83
+    password: a
     udp: true
-    sni: gw.alicdn.com
+    sni: a.com
     skip-cert-verify: true
     
   - name: WARP

@@ -20,7 +20,7 @@ def process_urls(url_file, processor):
                 logging.error(f"Error processing URL {url}: {e}")
     except Exception as e:
         logging.error(f"Error reading file {url_file}: {e}")
-#提取clash节点
+#clash
 def process_clash(data, index):
             # 解析YAML格式的内容
             content = yaml.safe_load(data)
@@ -150,19 +150,19 @@ def process_clash(data, index):
                     #ss_source=base64.b64encode(ss_source.encode()).decode()
                     ss_meta = f"ss://{ss_source}"
                     merged_proxies.append(ss_meta)
+
+#naive
 def process_naive(data, index):
     try:
         json_data = json.loads(data)
 
         proxy_str = json_data["proxy"]
-        #proxy_str = proxy_str.replace("https://", "")
         naiveproxy = base64.b64encode(proxy_str.encode()).decode()
         merged_proxies.append(naiveproxy)
-
-
     except Exception as e:
         logging.error(f"Error processing naive data for index {index}: {e}")
-#处理sing-box节点，待办
+
+#sing-box
 def process_sb(data, index):
     try:
         json_data = json.loads(data)
@@ -183,6 +183,7 @@ def process_sb(data, index):
 
     except Exception as e:
         logging.error(f"Error processing shadowtls data for index {index}: {e}")
+
 #hysteria
 def process_hysteria(data, index):
     try:
@@ -206,7 +207,8 @@ def process_hysteria(data, index):
 
     except Exception as e:
         logging.error(f"Error processing hysteria data for index {index}: {e}")
-# 处理hysteria2
+
+#hysteria2
 def process_hysteria2(data, index):
     try:
         json_data = json.loads(data)
@@ -223,7 +225,7 @@ def process_hysteria2(data, index):
     except Exception as e:
         logging.error(f"Error processing hysteria2 data for index {index}: {e}")
 
-#处理xray
+#xray
 def process_xray(data, index):
     try:
         json_data = json.loads(data)
@@ -287,8 +289,15 @@ def process_xray(data, index):
     except Exception as e:
         logging.error(f"Error processing xray data for index {index}: {e}")
 
+#v2ray
+def process_v2(data, index):
+    content = yaml.safe_load(data)
+    v2ray_content.append(content)
+    
+
 # 定义一个空列表用于存储合并后的代理配置
 merged_proxies = []
+v2ray_content = []
 
 # 处理 clash URLs
 process_urls('./urls/clash_urls.txt', process_clash)
@@ -308,14 +317,21 @@ process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
 # 处理 xray URLs
 process_urls('./urls/xray_urls.txt', process_xray)
 
+# 处理 v2ray base64
+process_urls('./urls/v2_urls.txt', process_v2)
+
 # 将结果写入文件
 merged_content = "\n".join(merged_proxies)
+merged_content1 = "\n".join(v2ray_content)
 
 try:
-    encoded_content = base64.b64encode(merged_content.encode("utf-8")).decode("utf-8")
-    
-    with open("./sub/ssr_base64.txt", "w") as encoded_file:
-        encoded_file.write(encoded_content)
+    # base64 to url
+    decoded_content = base64.b64decode(merged_content1.encode("utf-8")).decode("utf-8")
+    # 最终合并
+    final_merge = base64.b64encode((merged_content + decoded_content).encode("utf-8")).decode("utf-8")
+
+    with open("./sub/ssr_base64.txt", "w") as file:
+        file.write(final_merge)
     print("Successfully written to ssr_base64.txt")
 except Exception as e:
     print(f"Error encoding and writing to file: {e}")

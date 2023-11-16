@@ -25,7 +25,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - { name: 'DEMO', type: trojan, server: a, port: 1, password: 72ac875a-f5b9-461e-a7a4-942b468b0d83, udp: true, sni: gw.alicdn.com, skip-cert-verify: true }
+  - { name: 'DEMO', type: trojan, server: a, port: 1, password: a, udp: true, sni: a.com, skip-cert-verify: true }
 proxy-groups:
   - name: 节点选择
     type: select
