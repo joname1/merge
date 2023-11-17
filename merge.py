@@ -292,8 +292,7 @@ def process_xray(data, index):
 
 #v2ray
 def process_v2(data, index):
-    # base64 to url
-    content = yaml.safe_load(base64.b64decode(data.encode("utf-8")).decode("utf-8"))
+    content = yaml.safe_load(data)
     v2ray_content.append(content)
     
 
@@ -324,11 +323,14 @@ process_urls('./urls/v2_urls.txt', process_v2)
 
 # 将结果写入文件
 merged_content = "\n".join(merged_proxies)
-merged_content1 = "\n".join(v2ray_content)
+decode_content = ''
+for item in v2ray_content:
+    # base64 to url
+    decode_content += base64.b64decode(item.encode("utf-8")).decode("utf-8")
 
 try:
     # 最终合并
-    final_merge = base64.b64encode((merged_content + '\n' + merged_content1).encode("utf-8")).decode("utf-8")
+    final_merge = base64.b64encode((merged_content + '\n' + decode_content).encode("utf-8")).decode("utf-8")
 
     with open("./sub/ssr", "w") as file:
         file.write(final_merge)
