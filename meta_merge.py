@@ -18,7 +18,8 @@ def process_urls(url_file, processor):
                 logging.error(f"Error processing URL {url}: {e}")
     except Exception as e:
         logging.error(f"Error reading file {url_file}: {e}")
-#提取clash节点
+
+#clash
 def process_clash(data, index):
     content = yaml.safe_load(data)
     proxies = content.get('proxies', [])
@@ -26,17 +27,7 @@ def process_clash(data, index):
         proxy['name'] = f"meta_{proxy['type']}_{index}{i+1}"
     merged_proxies.extend(proxies)
 
-#提取clash_old节点-以后删除
-def process_clash_old(data, index):
-    content = yaml.safe_load(data)
-    proxies = content.get('proxies', [])
-    for i, proxy in enumerate(proxies):
-        if proxy.get('type') != 'hysteria2':
-            proxy['name'] = f"meta_{proxy['type']}_{index}{i+1}"
-            merged_proxies.append(proxy)
-
-
-# 处理sb，待办
+# sing-box
 def process_sb(data, index):
     try:
         json_data = json.loads(data)
@@ -74,6 +65,7 @@ def process_sb(data, index):
     except Exception as e:
         logging.error(f"Error processing shadowtls data for index {index}: {e}")
 
+#hysteria
 def process_hysteria(data, index):
     try:
         json_data = json.loads(data)
@@ -119,7 +111,8 @@ def process_hysteria(data, index):
 
     except Exception as e:
         logging.error(f"Error processing hysteria data for index {index}: {e}")
-# 处理hysteria2
+
+#hysteria2
 def process_hysteria2(data, index):
     try:
         json_data = json.loads(data)
@@ -155,7 +148,7 @@ def process_hysteria2(data, index):
     except Exception as e:
         logging.error(f"Error processing hysteria2 data for index {index}: {e}")
 
-#处理xray
+#xray
 def process_xray(data, index):
     try:
         json_data = json.loads(data)
@@ -238,22 +231,21 @@ def update_warp_proxy_groups(config_warp_data, merged_proxies):
         if group['name'] in ['自动选择', '手动选择', '负载均衡']:
             group['proxies'].extend(proxy['name'] for proxy in merged_proxies)
 
-# 包含hysteria2
 merged_proxies = []
 
-# 处理 clash URLs
+#clash URLs
 process_urls('./urls/clash_urls.txt', process_clash)
 
-# 处理 shadowtls URLs
-# process_urls('./urls/sb_urls.txt', process_sb)
+#shadowtls URLs
+process_urls('./urls/sb_urls.txt', process_sb)
 
-# 处理 hysteria URLs
+#hysteria URLs
 process_urls('./urls/hysteria_urls.txt', process_hysteria)
 
-# 处理 hysteria2 URLs
+#hysteria2 URLs
 process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
 
-# 处理 xray URLs
+#xray URLs
 process_urls('./urls/xray_urls.txt', process_xray)
 
 # 读取普通的配置文件内容
@@ -279,50 +271,4 @@ with open('./sub/merged_proxies_new.yaml', 'w', encoding='utf-8') as file:
 with open('./sub/merged_warp_proxies_new.yaml', 'w', encoding='utf-8') as file:
     yaml.dump(config_warp_data, file, sort_keys=False, allow_unicode=True)
 
-print("merge finished1")
-
-
-
-
-# 不包含hysteria2-以后删除
-merged_proxies = []
-
-# 处理 clash URLs
-process_urls('./urls/clash_urls.txt', process_clash_old)
-
-# 处理 shadowtls URLs
-# process_urls('./urls/sb_urls.txt', process_sb)
-
-# 处理 hysteria URLs
-process_urls('./urls/hysteria_urls.txt', process_hysteria)
-
-# 处理 hysteria2 URLs
-#process_urls('./urls/hysteria2_urls.txt', process_hysteria2)
-
-# 处理 xray URLs
-process_urls('./urls/xray_urls.txt', process_xray)
-
-# 读取普通的配置文件内容
-with open('./templates/clash_template.yaml', 'r', encoding='utf-8') as file:
-    config_data = yaml.safe_load(file)
-
-# 读取warp配置文件内容
-with open('./templates/clash_warp_template.yaml', 'r', encoding='utf-8') as file:
-    config_warp_data = yaml.safe_load(file)
-
-# 添加合并后的代理到proxies部分
-config_data['proxies'].extend(merged_proxies)
-config_warp_data['proxies'].extend(merged_proxies)
-
-# 更新自动选择和节点选择的proxies的name部分
-update_proxy_groups(config_data, merged_proxies)
-update_warp_proxy_groups(config_warp_data, merged_proxies)
-
-# 将更新后的数据写入到一个YAML文件中，并指定编码格式为UTF-8
-with open('./sub/merged_proxies.yaml', 'w', encoding='utf-8') as file:
-    yaml.dump(config_data, file, sort_keys=False, allow_unicode=True)
-
-with open('./sub/merged_warp_proxies.yaml', 'w', encoding='utf-8') as file:
-    yaml.dump(config_warp_data, file, sort_keys=False, allow_unicode=True)
-
-print("merge finished2")
+print("Successfully written to clash")

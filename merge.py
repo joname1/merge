@@ -20,6 +20,7 @@ def process_urls(url_file, processor):
                 logging.error(f"Error processing URL {url}: {e}")
     except Exception as e:
         logging.error(f"Error reading file {url_file}: {e}")
+
 #clash
 def process_clash(data, index):
             # 解析YAML格式的内容
@@ -291,7 +292,8 @@ def process_xray(data, index):
 
 #v2ray
 def process_v2(data, index):
-    content = yaml.safe_load(data)
+    # base64 to url
+    content = yaml.safe_load(base64.b64decode(data.encode("utf-8")).decode("utf-8"))
     v2ray_content.append(content)
     
 
@@ -302,10 +304,10 @@ v2ray_content = []
 # 处理 clash URLs
 process_urls('./urls/clash_urls.txt', process_clash)
 
-# 处理 shadowtls URLs
-process_urls('./urls/sb_urls.txt', process_sb)
+# 处理 shadowtls URLs TODO
+# process_urls('./urls/sb_urls.txt', process_sb)
 
-# 处理 naive URLs
+# 处理 naive URLs TODO
 # process_urls('./urls/naiverproxy_urls.txt', process_naive)
 
 # 处理 hysteria URLs
@@ -325,14 +327,12 @@ merged_content = "\n".join(merged_proxies)
 merged_content1 = "\n".join(v2ray_content)
 
 try:
-    # base64 to url
-    decoded_content = base64.b64decode(merged_content1.encode("utf-8")).decode("utf-8")
     # 最终合并
-    final_merge = base64.b64encode((merged_content + '\n' + decoded_content).encode("utf-8")).decode("utf-8")
+    final_merge = base64.b64encode((merged_content + '\n' + merged_content1).encode("utf-8")).decode("utf-8")
 
-    with open("./sub/ssr_base64.txt", "w") as file:
+    with open("./sub/ssr", "w") as file:
         file.write(final_merge)
-    print("Successfully written to ssr_base64.txt")
+    print("Successfully written to ssr")
 except Exception as e:
     print(f"Error encoding and writing to file: {e}")
 
