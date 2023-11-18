@@ -32,6 +32,7 @@ def process_clash(data, index):
             for proxy in proxies:
                 # 如果类型是vless
                 if proxy['type'] == 'vless' :
+                    name = proxy.get("name", "")
                     server = proxy.get("server", "")
                     port = int(proxy.get("port", 443))
                     udp = proxy.get("udp", "")
@@ -55,15 +56,17 @@ def process_clash(data, index):
                         security = 'reality'
                     else:
                         security = 'tls'
-                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_meta_{index}"
+                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#{name}"
 
                     merged_proxies.append(vless_meta)
 
                 if proxy['type'] == 'vmess' :
+                    name = proxy.get("name", "")
                     server = proxy.get("server", "")
                     port = int(proxy.get("port", 443))
                     uuid = proxy.get("uuid", "")
-                    #cipher = proxy.get("cipher", "")
+                    insecure = int(proxy.get("skip-cert-verify", 0))
+                    fp = proxy.get("client-fingerprint", "")
                     alterId = proxy.get("alterId", "")
                     network = proxy.get("network", "")
                     tls = int(proxy.get("tls", 0))
@@ -75,7 +78,7 @@ def process_clash(data, index):
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
-                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#vmess_meta_{index}"
+                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#{name}"
 
                     merged_proxies.append(vmess_meta)
 
@@ -122,31 +125,30 @@ def process_clash(data, index):
                     merged_proxies.append(hysteria_meta)
 
                 elif proxy['type'] == 'ssr':
+                    name = proxy.get("name", "")
                     server = proxy.get("server", "")
                     port = int(proxy.get("port", 443))
                     password = proxy.get("password", "")
-                    password = base64.b64encode(password.encode()).decode()
                     cipher = proxy.get("cipher", "")
                     obfs = proxy.get("obfs", "")
                     protocol = proxy.get("protocol", "")
                     protocol_param = proxy.get("protocol-param", "")
-                    protocol_param = base64.b64encode(protocol_param.encode()).decode()
                     obfs_param = proxy.get("obfs-param", "")
-                    obfs_param = base64.b64encode(obfs_param.encode()).decode()
                     # 生成URL
-                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_meta_{index}&protoparam{protocol_param}=&obfsparam={obfs_param}#ssr_{index}"
+                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks={name}"
                     
                     #ssr_source=base64.b64encode(ssr_source.encode()).decode()
                     ssr_meta = f"ssr://{ssr_source}"
                     merged_proxies.append(ssr_meta)
                 #目前仅支持最原始版本ss，无插件支持
                 elif proxy['type'] == 'ss':
+                    name = proxy.get("name", "")
                     server = proxy.get("server", "")
                     port = int(proxy.get("port", 443))
                     password = proxy.get("password", "")
                     cipher = proxy.get("cipher", "")
                     # 生成URL
-                    ss_source=f"{cipher}:{password}@{server}:{port}#ss_{index}"
+                    ss_source=f"{cipher}:{password}@{server}:{port}&remarks={name}"
                     
                     #ss_source=base64.b64encode(ss_source.encode()).decode()
                     ss_meta = f"ss://{ss_source}"
