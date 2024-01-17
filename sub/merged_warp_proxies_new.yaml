@@ -162,7 +162,7 @@ proxies:
 - name: meta_hysteria_71
   type: hysteria
   server: www.dtku50.xyz
-  port: 56252
+  port: 32408
   sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
@@ -185,7 +185,7 @@ proxies:
 - name: meta_hysteria_91
   type: hysteria
   server: 62.204.54.81
-  port: 44550
+  port: 62946
   sni: bing.com
   skip-cert-verify: true
   alpn:
