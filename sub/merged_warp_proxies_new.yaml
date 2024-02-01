@@ -53,6 +53,20 @@ proxies:
   dialer-proxy: WARP前置节点
 - name: meta_vless_01
   type: vless
+  server: 109.104.152.4
+  port: 16414
+  udp: true
+  uuid: 80b5b4de-0619-4ac2-b1ff-f2bcc697b641
+  tls: true
+  servername: mensura.cdn-apple.com
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: QR_5pj5Kj8I3sO6-6ywnM7B1fE2-btdv-IFEas2JHgE
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: meta_vless_02
+  type: vless
   server: 108.181.5.130
   port: 17346
   udp: true
@@ -238,6 +252,7 @@ proxy-groups:
   proxies:
   - DEMO
   - meta_vless_01
+  - meta_vless_02
   - meta_vmess_11
   - meta_vmess_21
   - meta_vmess_31
@@ -256,6 +271,7 @@ proxy-groups:
   proxies:
   - DEMO
   - meta_vless_01
+  - meta_vless_02
   - meta_vmess_11
   - meta_vmess_21
   - meta_vmess_31
@@ -274,6 +290,7 @@ proxy-groups:
   proxies:
   - DEMO
   - meta_vless_01
+  - meta_vless_02
   - meta_vmess_11
   - meta_vmess_21
   - meta_vmess_31
