@@ -53,10 +53,10 @@ proxies:
   dialer-proxy: WARP前置节点
 - name: meta_tuic_01
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 195.137.220.189
+  port: 33445
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
   password: dongtaiwang.com
   alpn:
   - h3
@@ -66,10 +66,10 @@ proxies:
   congestion-controller: bbr
 - name: meta_tuic_11
   type: tuic
-  server: 109.104.152.4
+  server: 74.63.249.229
   port: 443
   udp: true
-  uuid: 9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -79,10 +79,10 @@ proxies:
   congestion-controller: bbr
 - name: meta_tuic_21
   type: tuic
-  server: 109.104.153.17
-  port: 22334
+  server: 108.181.2.158
+  port: 33440
   udp: true
-  uuid: 364d2d85-5bfd-463f-a3dd-a08012a2a6ce
+  uuid: 996c2970-ec1c-4659-9c5f-b3609c42a764
   password: dongtaiwang.com
   alpn:
   - h3
@@ -92,10 +92,10 @@ proxies:
   congestion-controller: bbr
 - name: meta_tuic_31
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -105,10 +105,10 @@ proxies:
   congestion-controller: bbr
 - name: meta_tuic_41
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -118,10 +118,10 @@ proxies:
   congestion-controller: bbr
 - name: meta_tuic_51
   type: tuic
-  server: 62.210.103.14
-  port: 44556
+  server: 74.63.249.229
+  port: 443
   udp: true
-  uuid: 0d9d053c-81c8-4f26-9b5c-dff313dfdd70
+  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
   password: dongtaiwang.com
   alpn:
   - h3
@@ -226,6 +226,20 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: reality_0
+  type: vless
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: update.microsoft
+  reality-opts:
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
+    short-id: 6ba85179e30d4fc2
 - name: reality_1
   type: vless
   server: 108.181.22.213
@@ -239,6 +253,20 @@ proxies:
   servername: m.media-amazon.com
   reality-opts:
     public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    short-id: 6ba85179e30d4fc2
+- name: reality_2
+  type: vless
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: update.microsoft
+  reality-opts:
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
 - name: reality_3
   type: vless
@@ -291,7 +319,9 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_0
   - reality_1
+  - reality_2
   - reality_3
 - name: 手动选择
   type: select
@@ -311,7 +341,9 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_0
   - reality_1
+  - reality_2
   - reality_3
 - name: 负载均衡
   type: load-balance
@@ -331,7 +363,9 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - reality_0
   - reality_1
+  - reality_2
   - reality_3
   url: http://www.gstatic.com/generate_204
   interval: 300
