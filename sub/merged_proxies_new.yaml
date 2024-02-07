@@ -33,19 +33,20 @@ proxies:
   udp: true
   sni: a.com
   skip-cert-verify: true
-- name: meta_tuic_01
-  type: tuic
-  server: 195.137.220.189
-  port: 33445
-  udp: true
-  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
-  password: dongtaiwang.com
+- name: meta_hysteria_01
+  type: hysteria
+  server: 51.159.103.141
+  port: 18044
+  10000-13000: null
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 190
 - name: meta_tuic_11
   type: tuic
   server: 74.63.249.229
@@ -61,10 +62,10 @@ proxies:
   congestion-controller: bbr
 - name: meta_tuic_21
   type: tuic
-  server: 108.181.2.158
-  port: 33440
+  server: 1.162.136.33
+  port: 33098
   udp: true
-  uuid: 996c2970-ec1c-4659-9c5f-b3609c42a764
+  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
   password: dongtaiwang.com
   alpn:
   - h3
@@ -72,25 +73,27 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: meta_tuic_31
-  type: tuic
-  server: 74.63.249.229
-  port: 443
+- name: meta_vless_31
+  type: vless
+  server: 92.118.205.66
+  port: 10081
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
+  tls: true
+  servername: images-na.ssl-images-amazon.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: meta_tuic_41
   type: tuic
-  server: 74.63.249.229
-  port: 443
+  server: 195.137.220.189
+  port: 33445
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
+  uuid: 983a85bd-8fae-45d2-a702-5d00a383763e
   password: dongtaiwang.com
   alpn:
   - h3
@@ -98,19 +101,21 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: meta_tuic_51
-  type: tuic
-  server: 74.63.249.229
-  port: 443
+- name: meta_vless_51
+  type: vless
+  server: 92.118.205.66
+  port: 10081
   udp: true
-  uuid: 9a6140f4-abd8-4ece-aa0e-4f14556de56b
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  uuid: 7c009b14-ceb0-4373-9504-ab2a9ca2354a
+  tls: true
+  servername: images-na.ssl-images-amazon.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 - name: meta_hysteria_61
   type: hysteria
   server: www2.dtku48.xyz
@@ -208,20 +213,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: reality_0
-  type: vless
-  server: 62.210.101.0
-  port: 18700
-  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: update.microsoft
-  reality-opts:
-    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
-    short-id: 6ba85179e30d4fc2
 - name: reality_1
   type: vless
   server: 108.181.22.213
@@ -252,17 +243,17 @@ proxies:
     short-id: 6ba85179e30d4fc2
 - name: reality_3
   type: vless
-  server: 108.181.22.213
-  port: 28945
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
+  server: 62.210.101.0
+  port: 18700
+  uuid: e659661d-8439-46e0-b1ab-d75ceaf73404
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: m.media-amazon.com
+  servername: update.microsoft
   reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
+    public-key: PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw
     short-id: 6ba85179e30d4fc2
 proxy-groups:
 - name: 节点选择
@@ -271,12 +262,12 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - DEMO
-  - meta_tuic_01
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
-  - meta_tuic_31
+  - meta_vless_31
   - meta_tuic_41
-  - meta_tuic_51
+  - meta_vless_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
@@ -285,7 +276,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_0
   - reality_1
   - reality_2
   - reality_3
@@ -296,12 +286,12 @@ proxy-groups:
   tolerance: 50
   proxies:
   - DEMO
-  - meta_tuic_01
+  - meta_hysteria_01
   - meta_tuic_11
   - meta_tuic_21
-  - meta_tuic_31
+  - meta_vless_31
   - meta_tuic_41
-  - meta_tuic_51
+  - meta_vless_51
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
@@ -310,7 +300,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_0
   - reality_1
   - reality_2
   - reality_3
