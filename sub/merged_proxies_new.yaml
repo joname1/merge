@@ -33,12 +33,93 @@ proxies:
   udp: true
   sni: a.com
   skip-cert-verify: true
-- name: meta_vmess_01
+- name: meta_ss_01
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27103
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_02
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10809
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_03
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10813
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_04
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10815
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_05
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10803
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_06
+  type: ss
+  server: hefei.chiguayun.shop
+  port: 27101
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_07
+  type: ss
+  server: yd.qianggewangluo.buzz
+  port: 10817
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_08
+  type: ss
+  server: hefei.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_09
+  type: ss
+  server: uydyfkghjrtcsdx.youcansee.cyou
+  port: 20167
+  password: ca7e0c98-136d-472c-927b-b56bcba722e3
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_010
+  type: ss
+  server: zhejiang.52vpn.top
+  port: 32143
+  password: 432fe02f-b649-4bdc-91d8-f91ae87002f7
+  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_11
   type: vmess
-  server: www.darkroom.lol
-  port: 8080
+  server: data-us-v1.shwjfkw.cn
+  port: 20401
   cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /debian
+    headers:
+      host: data-us-v1.shwjfkw.cn
+- name: meta_ss_12
+  type: ss
+  server: service.ouluyun9803.com
+  port: 20003
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_13
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
   alterId: 0
   tls: false
   skip-cert-verify: true
@@ -47,8 +128,14 @@ proxies:
   ws-opts:
     path: /
     headers:
-      host: www.darkroom.lol
-- name: meta_vmess_02
+      host: server26.beheshtbaneh.com
+- name: meta_ss_14
+  type: ss
+  server: service.ouluyun9803.com
+  port: 20005
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_15
   type: vmess
   server: 172.67.221.183
   port: 8080
@@ -63,13 +150,7 @@ proxies:
     path: /
     headers:
       host: www.blueberrywindow.online
-- name: meta_ss_03
-  type: ss
-  server: fast_2ray_telchannelll.fast2rayy.eu.org
-  port: 443
-  password: Bog0ELmMM9DSxDdQ
-  cipher: chacha20-ietf-poly1305
-- name: meta_vmess_04
+- name: meta_vmess_16
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -84,146 +165,37 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: meta_tuic_05
-  type: tuic
-  server: 64.31.55.216
-  port: 56789
-  udp: true
-  uuid: 9a661a16-675c-4451-ba20-cde666de44ae
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: meta_ss_06
-  type: ss
-  server: jseyu.arvancode.eu.org
-  port: 443
-  password: Bog0ELmMM9DSxDdQ
-  cipher: chacha20-ietf-poly1305
-- name: meta_ss_07
-  type: ss
-  server: yd.qianggewangluo.buzz
-  port: 10818
-  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
-  cipher: chacha20-ietf-poly1305
-- name: meta_ss_08
+- name: meta_ss_17
   type: ss
   server: foshan.chiguayun.shop
   port: 27105
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_09
+- name: meta_ss_18
   type: ss
   server: foshan.chiguayun.shop
   port: 27108
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: meta_vmess_11
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: meta_vmess_12
-  type: vmess
-  server: data-us-v1.shwjfkw.cn
-  port: 20401
-  cipher: auto
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /debian
-    headers:
-      host: data-us-v1.shwjfkw.cn
-- name: meta_ss_13
-  type: ss
-  server: service.ouluyun9803.com
-  port: 20003
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  cipher: chacha20-ietf-poly1305
-- name: meta_vmess_14
-  type: vmess
-  server: 104.21.82.183
-  port: 8880
-  cipher: auto
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: server26.beheshtbaneh.com
-- name: meta_ss_15
-  type: ss
-  server: service.ouluyun9803.com
-  port: 20005
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  cipher: chacha20-ietf-poly1305
-- name: meta_ss_16
+- name: meta_ss_19
   type: ss
   server: yd.qianggewangluo.buzz
   port: 10808
   password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_17
+- name: meta_ss_110
   type: ss
   server: foshan.chiguayun.shop
   port: 27104
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_18
+- name: meta_ss_111
   type: ss
   server: foshan.chiguayun.shop
   port: 27102
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_19
-  type: ss
-  server: series-a2.samanehha.co
-  port: 443
-  password: mps3FwmDjLrWaOVg
-  cipher: chacha20-ietf-poly1305
-- name: meta_ss_110
-  type: ss
-  server: foshan.chiguayun.shop
-  port: 27103
-  password: f4b81edb-73a5-41fa-9086-6f446061815d
-  cipher: chacha20-ietf-poly1305
 - name: meta_vmess_21
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: meta_vmess_22
   type: vmess
   server: data-us-v1.shwjfkw.cn
   port: 20401
@@ -238,13 +210,13 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: meta_ss_23
+- name: meta_ss_22
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: meta_vmess_24
+- name: meta_vmess_23
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -259,53 +231,74 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: meta_ss_25
+- name: meta_ss_24
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_26
-  type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_25
+  type: vmess
+  server: 172.67.221.183
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
+- name: meta_vmess_26
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
 - name: meta_ss_27
   type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_ss_28
   type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_ss_29
   type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_210
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_211
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_vmess_31
   type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: meta_vmess_32
-  type: vmess
   server: data-us-v1.shwjfkw.cn
   port: 20401
   cipher: auto
@@ -319,13 +312,13 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: meta_ss_33
+- name: meta_ss_32
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: meta_vmess_34
+- name: meta_vmess_33
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -340,52 +333,73 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: meta_ss_35
+- name: meta_ss_34
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_36
-  type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_35
+  type: vmess
+  server: 172.67.221.183
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
+- name: meta_vmess_36
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
 - name: meta_ss_37
   type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_ss_38
   type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_ss_39
   type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_310
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_311
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_vmess_41
-  type: vmess
-  server: www.darkroom.lol
-  port: 8080
-  cipher: auto
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: www.darkroom.lol
-- name: meta_vmess_42
   type: vmess
   server: data-us-v1.shwjfkw.cn
   port: 20401
@@ -400,13 +414,13 @@ proxies:
     path: /debian
     headers:
       host: data-us-v1.shwjfkw.cn
-- name: meta_ss_43
+- name: meta_ss_42
   type: ss
   server: service.ouluyun9803.com
   port: 20003
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: meta_vmess_44
+- name: meta_vmess_43
   type: vmess
   server: 104.21.82.183
   port: 8880
@@ -421,35 +435,71 @@ proxies:
     path: /
     headers:
       host: server26.beheshtbaneh.com
-- name: meta_ss_45
+- name: meta_ss_44
   type: ss
   server: service.ouluyun9803.com
   port: 20005
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
   cipher: chacha20-ietf-poly1305
-- name: meta_ss_46
-  type: ss
-  server: 109.104.152.161
-  port: 12345
-  password: dongtaiwang.com
-  cipher: chacha20-ietf-poly1305
+- name: meta_vmess_45
+  type: vmess
+  server: 172.67.221.183
+  port: 8080
+  cipher: auto
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: www.blueberrywindow.online
+- name: meta_vmess_46
+  type: vmess
+  server: 104.21.82.183
+  port: 8880
+  cipher: auto
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: server26.beheshtbaneh.com
 - name: meta_ss_47
   type: ss
-  server: 109.104.152.33
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27105
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_ss_48
   type: ss
-  server: 64.31.55.124
-  port: 12345
-  password: dongtaiwang.com
+  server: foshan.chiguayun.shop
+  port: 27108
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_ss_49
   type: ss
-  server: 111.243.98.243
-  port: 12345
-  password: dongtaiwang.com
+  server: yd.qianggewangluo.buzz
+  port: 10808
+  password: 6f35bc86-d226-4dd0-8f4c-708f23077d24
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_410
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27104
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
+  cipher: chacha20-ietf-poly1305
+- name: meta_ss_411
+  type: ss
+  server: foshan.chiguayun.shop
+  port: 27102
+  password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
 - name: meta_vless_51
   type: vless
@@ -2227,52 +2277,60 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - DEMO
-  - meta_vmess_01
-  - meta_vmess_02
+  - meta_ss_01
+  - meta_ss_02
   - meta_ss_03
-  - meta_vmess_04
-  - meta_tuic_05
+  - meta_ss_04
+  - meta_ss_05
   - meta_ss_06
   - meta_ss_07
   - meta_ss_08
   - meta_ss_09
+  - meta_ss_010
   - meta_vmess_11
-  - meta_vmess_12
-  - meta_ss_13
-  - meta_vmess_14
-  - meta_ss_15
-  - meta_ss_16
+  - meta_ss_12
+  - meta_vmess_13
+  - meta_ss_14
+  - meta_vmess_15
+  - meta_vmess_16
   - meta_ss_17
   - meta_ss_18
   - meta_ss_19
   - meta_ss_110
+  - meta_ss_111
   - meta_vmess_21
-  - meta_vmess_22
-  - meta_ss_23
-  - meta_vmess_24
-  - meta_ss_25
-  - meta_ss_26
+  - meta_ss_22
+  - meta_vmess_23
+  - meta_ss_24
+  - meta_vmess_25
+  - meta_vmess_26
   - meta_ss_27
   - meta_ss_28
   - meta_ss_29
+  - meta_ss_210
+  - meta_ss_211
   - meta_vmess_31
-  - meta_vmess_32
-  - meta_ss_33
-  - meta_vmess_34
-  - meta_ss_35
-  - meta_ss_36
+  - meta_ss_32
+  - meta_vmess_33
+  - meta_ss_34
+  - meta_vmess_35
+  - meta_vmess_36
   - meta_ss_37
   - meta_ss_38
   - meta_ss_39
+  - meta_ss_310
+  - meta_ss_311
   - meta_vmess_41
-  - meta_vmess_42
-  - meta_ss_43
-  - meta_vmess_44
-  - meta_ss_45
-  - meta_ss_46
+  - meta_ss_42
+  - meta_vmess_43
+  - meta_ss_44
+  - meta_vmess_45
+  - meta_vmess_46
   - meta_ss_47
   - meta_ss_48
   - meta_ss_49
+  - meta_ss_410
+  - meta_ss_411
   - meta_vless_51
   - meta_vless_52
   - meta_vless_53
@@ -2427,52 +2485,60 @@ proxy-groups:
   tolerance: 50
   proxies:
   - DEMO
-  - meta_vmess_01
-  - meta_vmess_02
+  - meta_ss_01
+  - meta_ss_02
   - meta_ss_03
-  - meta_vmess_04
-  - meta_tuic_05
+  - meta_ss_04
+  - meta_ss_05
   - meta_ss_06
   - meta_ss_07
   - meta_ss_08
   - meta_ss_09
+  - meta_ss_010
   - meta_vmess_11
-  - meta_vmess_12
-  - meta_ss_13
-  - meta_vmess_14
-  - meta_ss_15
-  - meta_ss_16
+  - meta_ss_12
+  - meta_vmess_13
+  - meta_ss_14
+  - meta_vmess_15
+  - meta_vmess_16
   - meta_ss_17
   - meta_ss_18
   - meta_ss_19
   - meta_ss_110
+  - meta_ss_111
   - meta_vmess_21
-  - meta_vmess_22
-  - meta_ss_23
-  - meta_vmess_24
-  - meta_ss_25
-  - meta_ss_26
+  - meta_ss_22
+  - meta_vmess_23
+  - meta_ss_24
+  - meta_vmess_25
+  - meta_vmess_26
   - meta_ss_27
   - meta_ss_28
   - meta_ss_29
+  - meta_ss_210
+  - meta_ss_211
   - meta_vmess_31
-  - meta_vmess_32
-  - meta_ss_33
-  - meta_vmess_34
-  - meta_ss_35
-  - meta_ss_36
+  - meta_ss_32
+  - meta_vmess_33
+  - meta_ss_34
+  - meta_vmess_35
+  - meta_vmess_36
   - meta_ss_37
   - meta_ss_38
   - meta_ss_39
+  - meta_ss_310
+  - meta_ss_311
   - meta_vmess_41
-  - meta_vmess_42
-  - meta_ss_43
-  - meta_vmess_44
-  - meta_ss_45
-  - meta_ss_46
+  - meta_ss_42
+  - meta_vmess_43
+  - meta_ss_44
+  - meta_vmess_45
+  - meta_vmess_46
   - meta_ss_47
   - meta_ss_48
   - meta_ss_49
+  - meta_ss_410
+  - meta_ss_411
   - meta_vless_51
   - meta_vless_52
   - meta_vless_53
