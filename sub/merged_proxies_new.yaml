@@ -40,29 +40,7 @@ proxies:
   uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
   tls: false
   network: tcp
-- name: meta_vmess_02
-  type: vmess
-  server: 109.104.152.144
-  port: 12300
-  cipher: auto
-  uuid: 4be33771-099d-4d65-9426-09bed47eb41f
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
-- name: meta_vmess_11
-  type: vmess
-  server: www.dtku40.xyz
-  port: 10099
-  cipher: auto
-  uuid: fe3800ef-a9e8-4943-aaf2-6d99dac75c32
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: tcp
-- name: meta_tuic_12
+- name: meta_tuic_11
   type: tuic
   server: 109.104.152.144
   port: 44411
@@ -78,7 +56,7 @@ proxies:
 - name: meta_vmess_21
   type: vmess
   server: www.dtku40.xyz
-  port: 10099
+  port: 34500
   cipher: auto
   uuid: fe3800ef-a9e8-4943-aaf2-6d99dac75c32
   alterId: 0
@@ -1901,9 +1879,7 @@ proxy-groups:
   - DIRECT
   - DEMO
   - meta_vless_01
-  - meta_vmess_02
-  - meta_vmess_11
-  - meta_tuic_12
+  - meta_tuic_11
   - meta_vmess_21
   - meta_vmess_31
   - meta_vless_41
@@ -2063,9 +2039,7 @@ proxy-groups:
   proxies:
   - DEMO
   - meta_vless_01
-  - meta_vmess_02
-  - meta_vmess_11
-  - meta_tuic_12
+  - meta_tuic_11
   - meta_vmess_21
   - meta_vmess_31
   - meta_vless_41
