@@ -57,13 +57,32 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: meta_vless_21
-  type: vless
-  server: 108.181.5.18
-  port: 22222
-  uuid: 1bf69b3a-4673-4d02-a311-cb6380eaddce
+- name: meta_vmess_12
+  type: vmess
+  server: www.dtku40.xyz
+  port: 40011
+  cipher: auto
+  uuid: c506bccb-06b8-4f1a-bc3e-41ed4929c003
+  alterId: 0
   tls: false
-  network: tcp
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /soh5qvuQ/
+- name: meta_vmess_21
+  type: vmess
+  server: 108.181.5.18
+  port: 33300
+  cipher: auto
+  uuid: 44bee251-795d-4d7a-8ecb-c4322aec05be
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /xajVDSGJ/
 - name: meta_tuic_31
   type: tuic
   server: 109.104.152.101
@@ -1831,20 +1850,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: reality_1
-  type: vless
-  server: 51.159.77.153
-  port: 11111
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: m.media-amazon.com
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
 - name: reality_2
   type: vless
   server: 62.210.101.0
@@ -1882,7 +1887,8 @@ proxy-groups:
   - DEMO
   - meta_hysteria2_01
   - meta_tuic_11
-  - meta_vless_21
+  - meta_vmess_12
+  - meta_vmess_21
   - meta_tuic_31
   - meta_vless_41
   - meta_vless_51
@@ -2030,7 +2036,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_1
   - reality_2
   - reality_3
 - name: 自动选择
@@ -2042,7 +2047,8 @@ proxy-groups:
   - DEMO
   - meta_hysteria2_01
   - meta_tuic_11
-  - meta_vless_21
+  - meta_vmess_12
+  - meta_vmess_21
   - meta_tuic_31
   - meta_vless_41
   - meta_vless_51
@@ -2190,7 +2196,6 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
-  - reality_1
   - reality_2
   - reality_3
 rules:
