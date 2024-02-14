@@ -78,7 +78,7 @@ proxies:
 - name: meta_vmess_12
   type: vmess
   server: www.dtku40.xyz
-  port: 18840
+  port: 18810
   cipher: auto
   uuid: afb1ad76-0f6f-4cb8-983a-95f5b4708321
   alterId: 0
@@ -88,7 +88,19 @@ proxies:
   network: ws
   ws-opts:
     path: /9tEYTPFN/
-- name: meta_vmess_21
+- name: meta_hysteria_21
+  type: hysteria
+  server: 109.104.152.101
+  port: 32200
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+- name: meta_vmess_22
   type: vmess
   server: 108.181.5.18
   port: 40010
@@ -1922,7 +1934,8 @@ proxy-groups:
   - meta_hysteria2_01
   - meta_tuic_11
   - meta_vmess_12
-  - meta_vmess_21
+  - meta_hysteria_21
+  - meta_vmess_22
   - meta_tuic_31
   - meta_vless_41
   - meta_vless_51
@@ -2079,7 +2092,8 @@ proxy-groups:
   - meta_hysteria2_01
   - meta_tuic_11
   - meta_vmess_12
-  - meta_vmess_21
+  - meta_hysteria_21
+  - meta_vmess_22
   - meta_tuic_31
   - meta_vless_41
   - meta_vless_51
@@ -2236,7 +2250,8 @@ proxy-groups:
   - meta_hysteria2_01
   - meta_tuic_11
   - meta_vmess_12
-  - meta_vmess_21
+  - meta_hysteria_21
+  - meta_vmess_22
   - meta_tuic_31
   - meta_vless_41
   - meta_vless_51
