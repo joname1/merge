@@ -44,6 +44,17 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
+- name: meta_hysteria2_02
+  type: hysteria2
+  server: 109.104.152.144
+  port: 51100
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: meta_tuic_11
   type: tuic
   server: 109.104.152.144
@@ -57,44 +68,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: meta_vmess_12
-  type: vmess
-  server: www.dtku40.xyz
-  port: 18810
-  cipher: auto
-  uuid: afb1ad76-0f6f-4cb8-983a-95f5b4708321
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /9tEYTPFN/
-- name: meta_hysteria_21
-  type: hysteria
+- name: meta_tuic_21
+  type: tuic
   server: 109.104.152.101
-  port: 32200
-  sni: bing.com
-  skip-cert-verify: true
+  port: 31102
+  udp: true
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  auth_str: dongtaiwang.com
-  up: 11
-  down: 55
-- name: meta_vmess_22
-  type: vmess
-  server: 108.181.5.18
-  port: 40010
-  cipher: auto
-  uuid: 44bee251-795d-4d7a-8ecb-c4322aec05be
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /xajVDSGJ/
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: meta_tuic_31
   type: tuic
   server: 109.104.152.101
@@ -108,20 +94,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: meta_vless_41
-  type: vless
+- name: meta_tuic_41
+  type: tuic
   server: 109.104.152.101
-  port: 11111
+  port: 31101
   udp: true
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  uuid: 7bda06fd-e4af-4115-8aa3-f021832cfa78
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: meta_vless_51
   type: vless
   server: 198.41.193.226
@@ -1898,12 +1883,11 @@ proxy-groups:
   - DIRECT
   - DEMO
   - meta_hysteria2_01
+  - meta_hysteria2_02
   - meta_tuic_11
-  - meta_vmess_12
-  - meta_hysteria_21
-  - meta_vmess_22
+  - meta_tuic_21
   - meta_tuic_31
-  - meta_vless_41
+  - meta_tuic_41
   - meta_vless_51
   - meta_vless_52
   - meta_vless_53
@@ -2059,12 +2043,11 @@ proxy-groups:
   proxies:
   - DEMO
   - meta_hysteria2_01
+  - meta_hysteria2_02
   - meta_tuic_11
-  - meta_vmess_12
-  - meta_hysteria_21
-  - meta_vmess_22
+  - meta_tuic_21
   - meta_tuic_31
-  - meta_vless_41
+  - meta_tuic_41
   - meta_vless_51
   - meta_vless_52
   - meta_vless_53
