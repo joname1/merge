@@ -51,39 +51,21 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: meta_vless_01
-  type: vless
-  server: 64.31.55.30
-  port: 33220
-  udp: true
-  uuid: fb706a82-ec58-44d9-8f7a-39b8494e3a6d
-  tls: true
-  servername: www.lovelive-anime.jp
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: meta_vless_02
-  type: vless
-  server: 108.181.5.130
-  port: 19910
-  udp: true
-  uuid: 9cc39477-0d85-4419-84d4-fb7fc77668b3
-  tls: true
-  servername: m.media-amazon.com
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+- name: meta_hysteria2_01
+  type: hysteria2
+  server: 64.31.55.42
+  port: 31100
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
 - name: meta_hysteria2_11
   type: hysteria2
-  server: 109.104.152.242
-  port: 1022
+  server: 64.31.55.42
+  port: 31100
   password: dongtaiwang.com
   alpn:
   - h3
@@ -93,8 +75,8 @@ proxies:
   down: 55 Mbps
 - name: meta_hysteria2_21
   type: hysteria2
-  server: 109.104.152.242
-  port: 1022
+  server: 64.31.55.42
+  port: 31100
   password: dongtaiwang.com
   alpn:
   - h3
@@ -1925,8 +1907,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - DEMO
-  - meta_vless_01
-  - meta_vless_02
+  - meta_hysteria2_01
   - meta_hysteria2_11
   - meta_hysteria2_21
   - meta_vless_31
@@ -2082,8 +2063,7 @@ proxy-groups:
   type: select
   proxies:
   - DEMO
-  - meta_vless_01
-  - meta_vless_02
+  - meta_hysteria2_01
   - meta_hysteria2_11
   - meta_hysteria2_21
   - meta_vless_31
@@ -2239,8 +2219,7 @@ proxy-groups:
   type: load-balance
   proxies:
   - DEMO
-  - meta_vless_01
-  - meta_vless_02
+  - meta_hysteria2_01
   - meta_hysteria2_11
   - meta_hysteria2_21
   - meta_vless_31
