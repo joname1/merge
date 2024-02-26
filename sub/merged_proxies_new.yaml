@@ -3050,16 +3050,19 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: meta_hysteria2_91
-  type: hysteria2
-  server: 45.150.165.84
-  port: 8881
-  password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  obfs: salamander
-  obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20
-  skip-cert-verify: true
-  up: 2 Mbps
-  down: 10 Mbps
+- name: meta_vless_91
+  type: vless
+  server: 45.145.72.212
+  port: 11223
+  udp: true
+  uuid: 34d7aac1-fac7-4e17-b41e-5be028d286cd
+  tls: true
+  servername: addons.mozilla.org
+  flow: xtls-rprx-vision
+  network: tcp
+  reality-opts:
+    public-key: u24pYS0RqtYk8NBqtg4NIHUZIA0HmwuYw2RBIyt0T0c
+  client-fingerprint: chrome
 - name: hysteria_0
   type: hysteria
   server: 51.158.54.46
@@ -3353,7 +3356,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
-  - meta_hysteria2_91
+  - meta_vless_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -3569,7 +3572,7 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
-  - meta_hysteria2_91
+  - meta_vless_91
   - hysteria_0
   - hysteria_1
   - hysteria_2
