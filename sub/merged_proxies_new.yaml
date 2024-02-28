@@ -3031,47 +3031,12 @@ proxies:
   server: 51.159.77.153
   port: 33390
   password: dongtaiwang.com
+  alpn:
+  - h3
   sni: bing.com
   skip-cert-verify: true
-- name: meta_vless_82
-  type: vless
-  server: 173.242.112.223
-  port: 53019
-  udp: true
-  uuid: 8497b067-fb80-46f6-9d1e-f448b08a38ab
-  tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: vIMF9VrPGWZsgY2zsRZyt4mLcnA7bn_dF1UcBi4dv3w
-  client-fingerprint: chrome
-- name: meta_vless_83
-  type: vless
-  server: 89.208.243.9
-  port: 40821
-  udp: true
-  uuid: ad6a6c44-8214-4b3d-a13b-e398daa9026a
-  tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: tC_h0GuPP1DxQ-WMgp4QBHjPOVY_taYW9pUMocOzbAY
-  client-fingerprint: chrome
-- name: meta_vless_84
-  type: vless
-  server: 216.24.188.189
-  port: 53555
-  udp: true
-  uuid: 7d8f6abc-8048-4a5d-93c7-67e0b7371c16
-  tls: true
-  servername: addons.mozilla.org
-  flow: xtls-rprx-vision
-  network: tcp
-  reality-opts:
-    public-key: tbez1qn3jAT8TYsvh-w4Jh24mZHV6h8uWt1NaOizpBo
-  client-fingerprint: chrome
+  up: 11 Mbps
+  down: 55 Mbps
 - name: meta_vless_91
   type: vless
   server: 45.145.72.212
@@ -3377,9 +3342,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
-  - meta_vless_82
-  - meta_vless_83
-  - meta_vless_84
   - meta_vless_91
   - hysteria_0
   - hysteria_1
@@ -3595,9 +3557,6 @@ proxy-groups:
   - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria2_81
-  - meta_vless_82
-  - meta_vless_83
-  - meta_vless_84
   - meta_vless_91
   - hysteria_0
   - hysteria_1
