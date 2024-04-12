@@ -76,7 +76,7 @@ proxies:
       host: hang-broke-john-neither.trycloudflare.com
 - name: meta_vmess_13
   type: vmess
-  server: yh4.dtku41.xyz
+  server: yh7.dtku41.xyz
   port: 8080
   cipher: auto
   uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
@@ -299,9 +299,9 @@ proxies:
   - h3
 - name: hysteria_1
   type: hysteria
-  server: 173.234.25.52
-  port: 48919
-  ports: 48919
+  server: 62.210.243.131
+  port: 18702
+  ports: 18702
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -313,9 +313,9 @@ proxies:
   - h3
 - name: hysteria_2
   type: hysteria
-  server: www.dtku40.xyz
-  port: 18490
-  ports: 18490
+  server: 62.210.243.131
+  port: 18702
+  ports: 18702
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -328,8 +328,8 @@ proxies:
 - name: hysteria_3
   type: hysteria
   server: 109.104.152.194
-  port: 25304
-  ports: 47000-48000
+  port: 58510
+  ports: 58510
   auth_str: dongtaiwang.com
   up: 80
   down: 100
