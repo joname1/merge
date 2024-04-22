@@ -33,17 +33,18 @@ proxies:
   udp: true
   sni: a.com
   skip-cert-verify: true
-- name: meta_hysteria2_01
-  type: hysteria2
+- name: meta_tuic_01
   server: 74.63.233.74
-  port: 33445
+  port: 33441
+  type: tuic
+  uuid: a258065f-9502-4fe6-b3ed-cf7440e25150
   password: dongtaiwang.com
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 5 Mbps
-  down: 20 Mbps
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: meta_vmess_11
   type: vmess
   server: yh7.dtku41.xy
@@ -346,7 +347,7 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - DEMO
-  - meta_hysteria2_01
+  - meta_tuic_01
   - meta_vmess_11
   - meta_vmess_12
   - meta_vmess_13
@@ -371,7 +372,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - DEMO
-  - meta_hysteria2_01
+  - meta_tuic_01
   - meta_vmess_11
   - meta_vmess_12
   - meta_vmess_13
