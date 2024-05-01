@@ -45,138 +45,94 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: meta_vmess_11
-  type: vmess
-  server: yh7.dtku41.xy
-  port: 8080
-  cipher: auto
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  alterId: 0
-  tls: false
+- name: meta_hysteria_11
+  type: hysteria
+  server: 108.181.5.22
+  port: 44557
+  sni: bing.com
   skip-cert-verify: true
-  servername: concentrations-taxi-about-recognised.trycloudflare.com
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: dongtaiwang.com
+  up: 11
+  down: 55
+  hop_interval: 10
+- name: meta_vless_21
+  type: vless
+  server: yh7.dtku41.xyz
+  port: 443
+  uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
+  tls: true
+  servername: giving-hide-provisions-corrected.trycloudflare.com
   network: ws
   ws-opts:
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+    path: /argox-vl?ed=2048
     headers:
-      host: concentrations-taxi-about-recognised.trycloudflare.com
-- name: meta_vmess_12
-  type: vmess
+      host: giving-hide-provisions-corrected.trycloudflare.com
+- name: meta_vless_22
+  type: vless
   server: yh9.dtku41.xyz
+  port: 443
+  uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
+  tls: true
+  servername: giving-hide-provisions-corrected.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /argox-vl?ed=2048
+    headers:
+      host: giving-hide-provisions-corrected.trycloudflare.com
+- name: meta_vless_23
+  type: vless
+  server: yh6.dtku41.xyz
+  port: 443
+  uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
+  tls: true
+  servername: giving-hide-provisions-corrected.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /argox-vl?ed=2048
+    headers:
+      host: giving-hide-provisions-corrected.trycloudflare.com
+- name: meta_vless_24
+  type: vless
+  server: yh1.dtku41.xyz
+  port: 443
+  uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
+  tls: true
+  servername: giving-hide-provisions-corrected.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /argox-vl?ed=2048
+    headers:
+      host: giving-hide-provisions-corrected.trycloudflare.com
+- name: meta_vmess_31
+  type: vmess
+  server: 104.16.104.34
   port: 8080
   cipher: auto
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
   alterId: 0
   tls: false
   skip-cert-verify: true
-  servername: hang-broke-john-neither.trycloudflare.com
+  servername: dual-nothing-prep-exit.trycloudflare.com
   network: ws
   ws-opts:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
     headers:
-      host: hang-broke-john-neither.trycloudflare.com
-- name: meta_vmess_13
-  type: vmess
-  server: yh1.dtku41.xyz
-  port: 8080
-  cipher: auto
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: booty-pensions-scheduling-blogging.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-    headers:
-      host: booty-pensions-scheduling-blogging.trycloudflare.com
-- name: meta_vmess_14
-  type: vmess
-  server: yh6.dtku41.xy
-  port: 8080
-  cipher: auto
-  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: fantastic-doe-bids-ended.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
-    headers:
-      host: fantastic-doe-bids-ended.trycloudflare.com
-- name: meta_vless_21
-  type: vless
-  server: 109.104.152.101
-  port: 13982
-  uuid: 85beb960-236b-4634-81ce-6ad66652f928
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HjmsLPRaQqSqtdMMpIpmpoJOKhC0rAOUCHXnz0E89RE
-    short-id: 22f6b74f02cc88a6
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
-- name: meta_vless_31
-  type: vless
-  server: 109.104.152.101
-  port: 13982
-  uuid: 85beb960-236b-4634-81ce-6ad66652f928
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HjmsLPRaQqSqtdMMpIpmpoJOKhC0rAOUCHXnz0E89RE
-    short-id: 22f6b74f02cc88a6
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
-- name: meta_vless_41
-  type: vless
-  server: 109.104.152.101
-  port: 13982
-  uuid: 85beb960-236b-4634-81ce-6ad66652f928
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HjmsLPRaQqSqtdMMpIpmpoJOKhC0rAOUCHXnz0E89RE
-    short-id: 22f6b74f02cc88a6
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: meta_tuic_41
+  server: 108.181.5.132
+  port: 9727
+  type: tuic
+  uuid: 02b0c83f-5fa4-4f08-8a9f-d9cae4a7a419
+  password: 02b0c83f-5fa4-4f08-8a9f-d9cae4a7a419
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: meta_vless_51
   type: vless
   server: 109.104.152.101
@@ -348,13 +304,13 @@ proxy-groups:
   - DIRECT
   - DEMO
   - meta_tuic_01
-  - meta_vmess_11
-  - meta_vmess_12
-  - meta_vmess_13
-  - meta_vmess_14
+  - meta_hysteria_11
   - meta_vless_21
-  - meta_vless_31
-  - meta_vless_41
+  - meta_vless_22
+  - meta_vless_23
+  - meta_vless_24
+  - meta_vmess_31
+  - meta_tuic_41
   - meta_vless_51
   - meta_ss_61
   - meta_ss_71
@@ -373,13 +329,13 @@ proxy-groups:
   proxies:
   - DEMO
   - meta_tuic_01
-  - meta_vmess_11
-  - meta_vmess_12
-  - meta_vmess_13
-  - meta_vmess_14
+  - meta_hysteria_11
   - meta_vless_21
-  - meta_vless_31
-  - meta_vless_41
+  - meta_vless_22
+  - meta_vless_23
+  - meta_vless_24
+  - meta_vmess_31
+  - meta_tuic_41
   - meta_vless_51
   - meta_ss_61
   - meta_ss_71
