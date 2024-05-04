@@ -60,10 +60,10 @@ proxies:
   hop_interval: 10
 - name: meta_vless_21
   type: vless
-  server: yh7.dtku41.xyz
-  port: 443
+  server: 104.26.9.12
+  port: 80
   uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
-  tls: true
+  tls: false
   servername: giving-hide-provisions-corrected.trycloudflare.com
   network: ws
   ws-opts:
@@ -72,10 +72,10 @@ proxies:
       host: giving-hide-provisions-corrected.trycloudflare.com
 - name: meta_vless_22
   type: vless
-  server: yh9.dtku41.xyz
-  port: 443
+  server: 104.19.21.24
+  port: 80
   uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
-  tls: true
+  tls: false
   servername: giving-hide-provisions-corrected.trycloudflare.com
   network: ws
   ws-opts:
@@ -84,10 +84,10 @@ proxies:
       host: giving-hide-provisions-corrected.trycloudflare.com
 - name: meta_vless_23
   type: vless
-  server: yh6.dtku41.xyz
-  port: 443
+  server: 104.26.9.54
+  port: 80
   uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
-  tls: true
+  tls: false
   servername: giving-hide-provisions-corrected.trycloudflare.com
   network: ws
   ws-opts:
@@ -96,10 +96,10 @@ proxies:
       host: giving-hide-provisions-corrected.trycloudflare.com
 - name: meta_vless_24
   type: vless
-  server: yh1.dtku41.xyz
-  port: 443
+  server: 104.19.38.28
+  port: 80
   uuid: 1a62379a-e160-45a3-8361-3e6b5021d192
-  tls: true
+  tls: false
   servername: giving-hide-provisions-corrected.trycloudflare.com
   network: ws
   ws-opts:
@@ -108,7 +108,52 @@ proxies:
       host: giving-hide-provisions-corrected.trycloudflare.com
 - name: meta_vmess_31
   type: vmess
-  server: yh4.dtku41.xyz
+  server: 104.26.9.22
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: meta_vmess_32
+  type: vmess
+  server: 172.64.97.235
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: meta_vmess_33
+  type: vmess
+  server: 104.19.38.28
+  port: 8080
+  cipher: auto
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  servername: dual-nothing-prep-exit.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+    headers:
+      host: dual-nothing-prep-exit.trycloudflare.com
+- name: meta_vmess_34
+  type: vmess
+  server: 104.19.38.48
   port: 8080
   cipher: auto
   uuid: ef8c954e-014f-4b36-8273-9b5086afab34
@@ -310,6 +355,9 @@ proxy-groups:
   - meta_vless_23
   - meta_vless_24
   - meta_vmess_31
+  - meta_vmess_32
+  - meta_vmess_33
+  - meta_vmess_34
   - meta_tuic_41
   - meta_vless_51
   - meta_ss_61
@@ -335,6 +383,9 @@ proxy-groups:
   - meta_vless_23
   - meta_vless_24
   - meta_vmess_31
+  - meta_vmess_32
+  - meta_vmess_33
+  - meta_vmess_34
   - meta_tuic_41
   - meta_vless_51
   - meta_ss_61
