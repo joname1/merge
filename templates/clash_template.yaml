@@ -25,6 +25,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
+    -
 proxy-groups:
   - name: 节点选择
     type: select
@@ -38,7 +39,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-
+      -
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT

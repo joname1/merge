@@ -61,11 +61,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-
+      -
   - name: 手动选择
     type: select
     proxies:
-
+      -
   - name: 负载均衡
     type: load-balance #负载均衡
     proxies:
