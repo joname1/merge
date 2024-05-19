@@ -25,14 +25,12 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - { name: 'DEMO', type: trojan, server: a, port: 1, password: a, udp: true, sni: a.com, skip-cert-verify: true }
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
       - DIRECT
-      - DEMO
 
   - name: 自动选择
     type: url-test
@@ -40,7 +38,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - DEMO
 
 rules:
   - GEOIP,LAN,DIRECT

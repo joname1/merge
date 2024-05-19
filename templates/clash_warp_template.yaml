@@ -25,15 +25,6 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: DEMO
-    type: trojan
-    server: a
-    port: 1
-    password: a
-    udp: true
-    sni: a.com
-    skip-cert-verify: true
-    
   - name: WARP
     type: wireguard
     server: engage.cloudflareclient.com
@@ -52,7 +43,6 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - DEMO
       - WARP
       - 自动选择
       - 负载均衡
@@ -71,17 +61,14 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - DEMO
 
   - name: 手动选择
     type: select
     proxies:
-      - DEMO
 
   - name: 负载均衡
     type: load-balance #负载均衡
     proxies:
-      - DEMO
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     #lazy: true
