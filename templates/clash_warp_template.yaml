@@ -61,14 +61,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      -
+      - WARP
   - name: 手动选择
     type: select
     proxies:
-      -
+      - WARP
   - name: 负载均衡
     type: load-balance #负载均衡
     proxies:
+      - WARP
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     #lazy: true
