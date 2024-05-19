@@ -27,9 +27,9 @@ dns:
 proxies:
 - name: DEMO
   type: trojan
-  server: a
+  server: 1
   port: 1
-  password: a
+  password: 1
   udp: true
   sni: a.com
   skip-cert-verify: true
@@ -347,7 +347,6 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - DEMO
   - meta_tuic_01
   - meta_hysteria_11
   - meta_vless_21
@@ -375,7 +374,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - DEMO
+  - DIRECT
   - meta_tuic_01
   - meta_hysteria_11
   - meta_vless_21

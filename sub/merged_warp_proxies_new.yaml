@@ -25,14 +25,6 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: DEMO
-  type: trojan
-  server: a
-  port: 1
-  password: a
-  udp: true
-  sni: a.com
-  skip-cert-verify: true
 - name: WARP
   type: wireguard
   server: engage.cloudflareclient.com
@@ -363,7 +355,6 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - DEMO
   - WARP
   - 自动选择
   - 负载均衡
@@ -381,7 +372,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - DEMO
+  - WARP
   - meta_tuic_01
   - meta_hysteria_11
   - meta_vless_21
@@ -406,7 +397,7 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - DEMO
+  - WARP
   - meta_tuic_01
   - meta_hysteria_11
   - meta_vless_21
@@ -431,7 +422,7 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - DEMO
+  - WARP
   - meta_tuic_01
   - meta_hysteria_11
   - meta_vless_21
