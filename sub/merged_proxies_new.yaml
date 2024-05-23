@@ -374,7 +374,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - DIRECT
+  - DEMO
   - meta_tuic_01
   - meta_hysteria_11
   - meta_vless_21
