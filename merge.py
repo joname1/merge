@@ -56,7 +56,7 @@ def process_clash(data, index):
                         security = 'reality'
                     else:
                         security = 'tls'
-                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#{name}"
+                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_meta_{index}"
 
                     merged_proxies.append(vless_meta)
 
@@ -78,7 +78,7 @@ def process_clash(data, index):
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
-                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#{name}"
+                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#vmess_meta_{index}"
 
                     merged_proxies.append(vmess_meta)
 
@@ -93,7 +93,7 @@ def process_clash(data, index):
                     congestion = proxy.get("congestion-controller", "bbr")
                     alpn = proxy.get("alpn", [])[0] if proxy.get("alpn") and len(proxy["alpn"]) > 0 else None
                     #tuic_meta_neko = f"tuic://{server}:{port}?uuid={uuid}&version=5&password={password}&insecure={insecure}&alpn={alpn}&mode={udp_relay_mode}"
-                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}#tuic_{index}"
+                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}#tuic_meta_{index}"
                     merged_proxies.append(tuic_meta)
 
                 elif proxy['type'] == "hysteria2":
@@ -135,7 +135,7 @@ def process_clash(data, index):
                     protocol_param = proxy.get("protocol-param", "")
                     obfs_param = proxy.get("obfs-param", "")
                     # 生成URL
-                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks={name}"
+                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_{index}"
                     
                     #ssr_source=base64.b64encode(ssr_source.encode()).decode()
                     ssr_meta = f"ssr://{ssr_source}"
@@ -148,7 +148,7 @@ def process_clash(data, index):
                     password = proxy.get("password", "")
                     cipher = proxy.get("cipher", "")
                     # 生成URL
-                    ss_source=f"{cipher}:{password}@{server}:{port}&remarks={name}"
+                    ss_source=f"{cipher}:{password}@{server}:{port}&remarks=ss_{index}"
                     
                     #ss_source=base64.b64encode(ss_source.encode()).decode()
                     ss_meta = f"ss://{ss_source}"
@@ -180,7 +180,7 @@ def process_sb(data, index):
 
         ss = f"{method}:{password}@{server}:{server_port}"
         shadowtls = f'{{"version": "{version}", "host": "{host}","password":{shadowtls_password}}}'
-        shadowtls_proxy = "ss://"+base64.b64encode(ss.encode()).decode()+"?shadow-tls="+base64.b64encode(shadowtls.encode()).decode()+f"#shadowtls{index}"
+        shadowtls_proxy = "ss://"+base64.b64encode(ss.encode()).decode()+"?shadow-tls="+base64.b64encode(shadowtls.encode()).decode()+f"#shadowtls_{index}"
         
         merged_proxies.append(shadowtls_proxy)
 
