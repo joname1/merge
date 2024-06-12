@@ -31,7 +31,7 @@ proxies:
   port: 1
   password: 1
   udp: true
-  sni: a.com
+  sni: 1.com
   skip-cert-verify: true
 - name: meta_tuic_01
   server: 74.63.233.74
