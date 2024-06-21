@@ -45,79 +45,79 @@ proxies:
   dialer-proxy: WARP前置节点
 - name: meta_vmess_01
   type: vmess
-  server: 104.16.148.244
-  port: 8080
-  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
+  server: 104.19.38.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip001.freegradely.xyz
+  servername: ip11.freegradely.xyz
   ws-opts:
-    path: /9aqOiXD2/
+    path: e9e3cc13-db48-4cc1-8c24-7626439a5339-vm
     headers:
-      Host: ip001.freegradely.xyz
+      Host: ip11.freegradely.xyz
 - name: meta_vmess_02
   type: vmess
   server: 172.64.169.160
-  port: 8080
-  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip001.freegradely.xyz
+  servername: ip11.freegradely.xyz
   ws-opts:
-    path: /9aqOiXD2/
+    path: e9e3cc13-db48-4cc1-8c24-7626439a5339-vm
     headers:
-      Host: ip001.freegradely.xyz
+      Host: ip11.freegradely.xyz
 - name: meta_vmess_03
   type: vmess
   server: 23.227.38.3
-  port: 8080
-  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip001.freegradely.xyz
+  servername: ip11.freegradely.xyz
   ws-opts:
-    path: /9aqOiXD2/
+    path: e9e3cc13-db48-4cc1-8c24-7626439a5339-vm
     headers:
-      Host: ip001.freegradely.xyz
+      Host: ip11.freegradely.xyz
 - name: meta_vmess_04
   type: vmess
   server: 104.19.38.12
-  port: 8080
-  uuid: ffaba3ee-4070-4590-9959-d863f9a4c6de
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip001.freegradely.xyz
+  servername: ip11.freegradely.xyz
   ws-opts:
-    path: /9aqOiXD2/
+    path: e9e3cc13-db48-4cc1-8c24-7626439a5339-vm
     headers:
-      Host: ip001.freegradely.xyz
+      Host: ip11.freegradely.xyz
 - name: meta_vmess_11
   type: vmess
-  server: 162.159.129.179
-  port: 443
+  server: 104.19.38.10
+  port: 80
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: meta_vmess_12
   type: vmess
   server: 23.227.38.3
@@ -128,26 +128,26 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: meta_vmess_13
   type: vmess
   server: 141.101.122.184
-  port: 8443
+  port: 80
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: meta_vmess_14
   type: vmess
   server: 104.19.38.112
@@ -158,11 +158,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: remaining-criminal-douglas-idol.trycloudflare.com
+  servername: doctor-granny-openings-br.trycloudflare.com
   ws-opts:
     path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: remaining-criminal-douglas-idol.trycloudflare.com
+      Host: doctor-granny-openings-br.trycloudflare.com
 - name: meta_vmess_21
   type: vmess
   server: 104.19.51.232
@@ -225,67 +225,7 @@ proxies:
       Host: ip002.freegradely.xyz
 - name: meta_vmess_31
   type: vmess
-  server: 104.26.9.22
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: meta_vmess_32
-  type: vmess
-  server: 172.64.97.235
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: meta_vmess_33
-  type: vmess
-  server: 23.227.38.7
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: meta_vmess_34
-  type: vmess
-  server: 104.19.38.48
-  port: 8080
-  cipher: auto
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  alterId: 0
-  tls: false
-  skip-cert-verify: true
-  servername: luther-soon-uploaded-anxiety.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-- name: meta_vmess_41
-  type: vmess
-  server: 104.16.148.244
+  server: 104.19.32.46
   port: 2086
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
   alterId: 0
@@ -293,11 +233,71 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip002.freegradely.xyz
+  servername: ip002-3.dtku47.xyz
   ws-opts:
     path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
     headers:
-      Host: ip002.freegradely.xyz
+      Host: ip002-3.dtku47.xyz
+- name: meta_vmess_32
+  type: vmess
+  server: 23.227.38.6
+  port: 2086
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip002-3.dtku47.xyz
+  ws-opts:
+    path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
+    headers:
+      Host: ip002-3.dtku47.xyz
+- name: meta_vmess_33
+  type: vmess
+  server: 104.19.51.232
+  port: 2086
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip002-3.dtku47.xyz
+  ws-opts:
+    path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
+    headers:
+      Host: ip002-3.dtku47.xyz
+- name: meta_vmess_34
+  type: vmess
+  server: 104.19.38.62
+  port: 2086
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip002-3.dtku47.xyz
+  ws-opts:
+    path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
+    headers:
+      Host: ip002-3.dtku47.xyz
+- name: meta_vmess_41
+  type: vmess
+  server: 104.19.46.233
+  port: 2086
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: ip002-2.dtku47.xyz
+  ws-opts:
+    path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
+    headers:
+      Host: ip002-2.dtku47.xyz
 - name: meta_vmess_42
   type: vmess
   server: 23.227.38.6
@@ -308,11 +308,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip002.freegradely.xyz
+  servername: ip002-2.dtku47.xyz
   ws-opts:
     path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
     headers:
-      Host: ip002.freegradely.xyz
+      Host: ip002-2.dtku47.xyz
 - name: meta_vmess_43
   type: vmess
   server: 104.19.51.232
@@ -323,11 +323,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip002.freegradely.xyz
+  servername: ip002-2.dtku47.xyz
   ws-opts:
     path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
     headers:
-      Host: ip002.freegradely.xyz
+      Host: ip002-2.dtku47.xyz
 - name: meta_vmess_44
   type: vmess
   server: 104.19.38.62
@@ -338,11 +338,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip002.freegradely.xyz
+  servername: ip002-2.dtku47.xyz
   ws-opts:
     path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm
     headers:
-      Host: ip002.freegradely.xyz
+      Host: ip002-2.dtku47.xyz
 - name: meta_vless_51
   type: vless
   server: 109.104.152.101
@@ -367,107 +367,90 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: meta_ss_61
-  type: ss
+- name: meta_tuic_61
   server: 109.104.152.186
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
-    version: 3
-  smux:
-    enabled: true
-    protocol: smux
-    max-connections: 1
-    min-streams: 4
-    statistic: false
-    only-tcp: false
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
-- name: meta_ss_71
-  type: ss
+  port: 44550
+  type: tuic
+  uuid: 760d4891-63ab-40db-98c7-1219ae1b92df
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: meta_tuic_71
   server: 109.104.152.186
-  port: 11223
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
-  smux:
-    enabled: true
-    protocol: smux
-    max-connections: 1
-    min-streams: 4
-    statistic: false
-    only-tcp: false
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 11
-      down: 55
+  port: 44550
+  type: tuic
+  uuid: 760d4891-63ab-40db-98c7-1219ae1b92df
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: meta_vmess_81
   type: vmess
-  server: 104.16.149.222
-  port: 2095
-  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  server: 104.19.32.88
+  port: 2086
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip5.freegradely.xyz
+  servername: ip5-4.freegradely.xyz
   ws-opts:
-    path: /WNh8bXQv/
+    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: ip5.freegradely.xyz
+      Host: ip5-4.freegradely.xyz
 - name: meta_vmess_82
   type: vmess
   server: 23.227.38.8
-  port: 2095
-  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  port: 2086
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip5.freegradely.xyz
+  servername: ip5-4.freegradely.xyz
   ws-opts:
-    path: /WNh8bXQv/
+    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: ip5.freegradely.xyz
+      Host: ip5-4.freegradely.xyz
 - name: meta_vmess_83
   type: vmess
   server: 172.64.144.66
-  port: 2095
-  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  port: 2086
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip5.freegradely.xyz
+  servername: ip5-4.freegradely.xyz
   ws-opts:
-    path: /WNh8bXQv/
+    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: ip5.freegradely.xyz
+      Host: ip5-4.freegradely.xyz
 - name: meta_vmess_84
   type: vmess
   server: 104.19.38.88
-  port: 2095
-  uuid: e9555d84-a146-4e36-9c23-eac28387be48
+  port: 2086
+  uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: ip5.freegradely.xyz
+  servername: ip5-4.freegradely.xyz
   ws-opts:
-    path: /WNh8bXQv/
+    path: d726eb31-0c9e-49f9-8968-59c06f4ea15c-vm
     headers:
-      Host: ip5.freegradely.xyz
+      Host: ip5-4.freegradely.xyz
 - name: meta_vless_91
   type: vless
   server: 109.104.152.101
@@ -492,18 +475,6 @@ proxies:
       enabled: true
       up: 11
       down: 55
-- name: shadowtls_1
-  type: ss
-  server: 109.104.152.186
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2mLw+aTguEUrvK/Jamxr4CY/RbLCL/MmfWJQ7c6bXe8=
-  plugin: shadow-tls
-  client-fingerprint: chrome
-  plugin-opts:
-    host: nijigen-works.jp
-    password: UcMMbVQBzIUAcdC12ju6lV9j3rjK3cAQiZoYCDk1h/g=
-    version: 3
 - name: hysteria_0
   type: hysteria
   server: 62.210.243.131
@@ -603,14 +574,13 @@ proxy-groups:
   - meta_vmess_43
   - meta_vmess_44
   - meta_vless_51
-  - meta_ss_61
-  - meta_ss_71
+  - meta_tuic_61
+  - meta_tuic_71
   - meta_vmess_81
   - meta_vmess_82
   - meta_vmess_83
   - meta_vmess_84
   - meta_vless_91
-  - shadowtls_1
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -640,14 +610,13 @@ proxy-groups:
   - meta_vmess_43
   - meta_vmess_44
   - meta_vless_51
-  - meta_ss_61
-  - meta_ss_71
+  - meta_tuic_61
+  - meta_tuic_71
   - meta_vmess_81
   - meta_vmess_82
   - meta_vmess_83
   - meta_vmess_84
   - meta_vless_91
-  - shadowtls_1
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -677,14 +646,13 @@ proxy-groups:
   - meta_vmess_43
   - meta_vmess_44
   - meta_vless_51
-  - meta_ss_61
-  - meta_ss_71
+  - meta_tuic_61
+  - meta_tuic_71
   - meta_vmess_81
   - meta_vmess_82
   - meta_vmess_83
   - meta_vmess_84
   - meta_vless_91
-  - shadowtls_1
   - hysteria_0
   - hysteria_1
   - hysteria_2
