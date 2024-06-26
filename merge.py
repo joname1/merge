@@ -69,6 +69,7 @@ def process_clash(data, index):
                     fp = proxy.get("client-fingerprint", "")
                     alterId = proxy.get("alterId", "")
                     network = proxy.get("network", "")
+                    scy = proxy.get("scy","")
                     tls = int(proxy.get("tls", 0))
                     if tls == 0:
                         security = "none"
@@ -78,8 +79,9 @@ def process_clash(data, index):
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
-                    vmess_meta =  f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#vmess_meta_{index}"
-
+                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":name,"scy":scy,"sni":sni,"tls":security}
+                    dataJson = json.dumps(vmess_format)
+                    vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
                     merged_proxies.append(vmess_meta)
 
                 elif proxy['type'] == 'tuic':
@@ -276,6 +278,49 @@ def process_xray(data, index):
 
             # 将当前proxy字典添加到所有proxies列表中
             merged_proxies.append(xray_proxy)
+        if protocol == "vmess":
+            vnext = json_data["outbounds"][0]["settings"]["vnext"]
+
+            if vnext:
+                server = vnext[0].get("address", "")
+                port = vnext[0].get("port", "")
+                users = vnext[0]["users"]
+
+                if users:
+                    user = users[0]
+                    uuid = user.get("id", "")
+                    alterId = user.get("alterId", "")
+                    flow = user.get("flow", "")
+
+            stream_settings = json_data["outbounds"][0].get("streamSettings", {})
+            network = stream_settings.get("network", "")
+            security = stream_settings.get("security", "")
+            reality_settings = stream_settings.get("realitySettings", {})
+
+            publicKey = reality_settings.get("publicKey", "")
+            short_id = reality_settings.get("shortId", "")
+            sni = reality_settings.get("serverName", "")
+            #tls
+            tls_settings = stream_settings.get("tlsSettings", {})
+            sni = tls_settings.get("serverName", sni)
+            insecure = int(tls_settings.get("allowInsecure", 0))
+
+            fp = reality_settings.get("fingerprint", "")
+            fp = tls_settings.get("fingerprint", fp)
+            spx = reality_settings.get("spiderX", "")
+
+            grpc_settings = stream_settings.get("grpcSettings", {})
+            grpc_serviceName = grpc_settings.get("serviceName", "")
+
+            ws_settings = stream_settings.get("wsSettings", {})
+            ws_path = ws_settings.get("path", "")
+            ws_headers_host = ws_settings.get("headers", {}).get("Host", "")
+
+            xray_vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"allowInsecure":insecure,"sni":sni,"tls":security}
+            dataJson = json.dumps(xray_vmess_format)
+            xray_vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
+
+            merged_proxies.append(xray_vmess_meta)
         # 不支持插件
         if protocol == "shadowsocks":
             server = json_data["outbounds"][0]["settings"]["servers"]["address"]
@@ -332,11 +377,17 @@ for item in v2ray_content:
 
 try:
     # 最终合并
-    final_merge = base64.b64encode((merged_content + '\n' + decode_content).encode("utf-8")).decode("utf-8")
+    final_orignal = (merged_content + '\n' + decode_content)
+
+    final_base64 = base64.b64encode((merged_content + '\n' + decode_content).encode("utf-8")).decode("utf-8")
 
     with open("./sub/ssr", "w") as file:
-        file.write(final_merge)
+        file.write(final_orignal)
     print("Successfully written to ssr")
+
+    with open("./sub/ssr64", "w") as file:
+        file.write(final_base64)
+    print("Successfully written to ssr64")
 except Exception as e:
     print(f"Error encoding and writing to file: {e}")
 
