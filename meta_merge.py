@@ -24,7 +24,7 @@ def process_clash(data, index):
     content = yaml.safe_load(data)
     proxies = content.get('proxies', [])
     for i, proxy in enumerate(proxies):
-        proxy['name'] = f"meta_{proxy['type']}_{index}{i+1}"
+        proxy['name'] = f"{proxy['type']}_meta_{i}"
     merged_proxies.extend(proxies)
 
 # sing-box

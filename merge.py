@@ -79,7 +79,7 @@ def process_clash(data, index):
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
-                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":name,"scy":scy,"sni":sni,"tls":security}
+                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":"vmess_meta_" + name.strip('dongtaiwang.com_'),"scy":scy,"sni":sni,"tls":security}
                     dataJson = json.dumps(vmess_format)
                     vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
                     merged_proxies.append(vmess_meta)
@@ -316,7 +316,7 @@ def process_xray(data, index):
             ws_path = ws_settings.get("path", "")
             ws_headers_host = ws_settings.get("headers", {}).get("Host", "")
 
-            xray_vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"allowInsecure":insecure,"sni":sni,"tls":security}
+            xray_vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"allowInsecure":insecure,"sni":sni,"tls":security,"ps": "xray_vmess_" + str(index)}
             dataJson = json.dumps(xray_vmess_format)
             xray_vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
 
