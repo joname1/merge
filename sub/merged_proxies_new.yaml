@@ -43,11 +43,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_1
   type: vmess
   server: 104.26.0.56
@@ -58,11 +58,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_2
   type: vmess
   server: 23.227.38.3
@@ -73,11 +73,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_3
   type: vmess
   server: 104.19.38.12
@@ -88,11 +88,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_4
   type: vmess
   server: 172.64.175.88
@@ -103,11 +103,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_5
   type: vmess
   server: 172.64.99.22
@@ -118,11 +118,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_6
   type: vmess
   server: 104.19.21.71
@@ -133,11 +133,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_7
   type: vmess
   server: 172.64.175.213
@@ -148,11 +148,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_8
   type: vmess
   server: 172.64.198.249
@@ -163,11 +163,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_9
   type: vmess
   server: 172.64.194.76
@@ -178,11 +178,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_10
   type: vmess
   server: 104.19.21.63
@@ -193,11 +193,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_11
   type: vmess
   server: 104.19.123.11
@@ -208,11 +208,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_12
   type: vmess
   server: 104.18.57.111
@@ -223,11 +223,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_13
   type: vmess
   server: 104.19.21.230
@@ -238,11 +238,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_14
   type: vmess
   server: 104.19.21.230
@@ -253,11 +253,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_15
   type: vmess
   server: 104.19.46.103
@@ -268,11 +268,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_16
   type: vmess
   server: 104.19.32.216
@@ -283,11 +283,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_17
   type: vmess
   server: 104.19.47.65
@@ -298,11 +298,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_18
   type: vmess
   server: 104.19.58.175
@@ -313,11 +313,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_19
   type: vmess
   server: 104.19.55.49
@@ -328,11 +328,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_20
   type: vmess
   server: 104.19.42.49
@@ -343,11 +343,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_21
   type: vmess
   server: 104.17.106.151
@@ -358,11 +358,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_22
   type: vmess
   server: 104.19.57.4
@@ -373,11 +373,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_23
   type: vmess
   server: 104.19.59.89
@@ -388,11 +388,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_24
   type: vmess
   server: 104.20.17.186
@@ -403,11 +403,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_25
   type: vmess
   server: 104.20.25.146
@@ -418,11 +418,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_26
   type: vmess
   server: 104.20.25.146
@@ -433,11 +433,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_27
   type: vmess
   server: 104.26.7.132
@@ -448,11 +448,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_28
   type: vmess
   server: 104.20.25.146
@@ -463,11 +463,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_29
   type: vmess
   server: 104.20.17.186
@@ -478,11 +478,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_30
   type: vmess
   server: 104.19.45.11
@@ -493,11 +493,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_31
   type: vmess
   server: 104.19.45.13
@@ -508,11 +508,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_32
   type: vmess
   server: 104.19.45.15
@@ -523,11 +523,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_33
   type: vmess
   server: 104.19.45.17
@@ -538,11 +538,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_34
   type: vmess
   server: 104.19.45.19
@@ -553,11 +553,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_35
   type: vmess
   server: 104.19.45.31
@@ -568,11 +568,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_36
   type: vmess
   server: 104.19.45.35
@@ -583,11 +583,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_37
   type: vmess
   server: 104.19.45.42
@@ -598,11 +598,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_38
   type: vmess
   server: 104.19.45.47
@@ -613,11 +613,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_39
   type: vmess
   server: 104.19.45.50
@@ -628,11 +628,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_40
   type: vmess
   server: 104.19.45.90
@@ -643,11 +643,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_41
   type: vmess
   server: 104.19.46.17
@@ -658,11 +658,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_42
   type: vmess
   server: 104.19.46.22
@@ -673,11 +673,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_43
   type: vmess
   server: 104.19.46.27
@@ -688,11 +688,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_44
   type: vmess
   server: 104.19.46.33
@@ -703,11 +703,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_45
   type: vmess
   server: 104.19.46.36
@@ -718,11 +718,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_46
   type: vmess
   server: 104.19.46.39
@@ -733,11 +733,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_47
   type: vmess
   server: 104.19.46.42
@@ -748,11 +748,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_48
   type: vmess
   server: 104.19.46.56
@@ -763,11 +763,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_49
   type: vmess
   server: 104.19.46.59
@@ -778,11 +778,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_50
   type: vmess
   server: 104.19.46.63
@@ -793,11 +793,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_51
   type: vmess
   server: 104.19.47.22
@@ -808,11 +808,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_52
   type: vmess
   server: 104.19.47.27
@@ -823,11 +823,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_53
   type: vmess
   server: 104.19.47.32
@@ -838,11 +838,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_54
   type: vmess
   server: 104.19.47.36
@@ -853,11 +853,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_55
   type: vmess
   server: 104.19.47.45
@@ -868,11 +868,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_56
   type: vmess
   server: 104.19.47.77
@@ -883,11 +883,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_57
   type: vmess
   server: 104.19.47.79
@@ -898,11 +898,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_58
   type: vmess
   server: 104.19.47.88
@@ -913,11 +913,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_59
   type: vmess
   server: 104.19.47.80
@@ -928,11 +928,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
+      Host: ip2.1457230.xyz
 - name: vmess_meta_60
   type: vmess
   server: 104.19.47.122
@@ -943,476 +943,473 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip1.1457230.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip1.1457230.xyz
-- name: vmess_meta_0
+      Host: ip2.1457230.xyz
+- name: vmess_meta_61
   type: vmess
-  server: 104.19.38.18
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.5
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_1
+      Host: ip2.1457230.xyz
+- name: vmess_meta_62
   type: vmess
-  server: 104.26.0.66
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_2
+      Host: ip2.1457230.xyz
+- name: vmess_meta_63
   type: vmess
-  server: 23.227.38.13
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.10
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_3
+      Host: ip2.1457230.xyz
+- name: vmess_meta_64
   type: vmess
-  server: 104.19.38.22
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.15
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_4
+      Host: ip2.1457230.xyz
+- name: vmess_meta_65
   type: vmess
-  server: 172.64.175.98
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.19
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_5
+      Host: ip2.1457230.xyz
+- name: vmess_meta_66
   type: vmess
-  server: 172.64.99.32
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.22
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_6
+      Host: ip2.1457230.xyz
+- name: vmess_meta_67
   type: vmess
-  server: 104.19.21.81
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.25
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_7
+      Host: ip2.1457230.xyz
+- name: vmess_meta_68
   type: vmess
-  server: 172.64.175.223
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.29
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_8
+      Host: ip2.1457230.xyz
+- name: vmess_meta_69
   type: vmess
-  server: 172.64.198.229
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.35
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_9
+      Host: ip2.1457230.xyz
+- name: vmess_meta_70
   type: vmess
-  server: 172.64.194.96
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.167.44
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_10
+      Host: ip2.1457230.xyz
+- name: vmess_meta_71
   type: vmess
-  server: 104.19.21.73
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.7
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_11
+      Host: ip2.1457230.xyz
+- name: vmess_meta_72
   type: vmess
-  server: 104.19.123.31
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.9
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_12
+      Host: ip2.1457230.xyz
+- name: vmess_meta_73
   type: vmess
-  server: 104.18.57.121
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.15
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_13
+      Host: ip2.1457230.xyz
+- name: vmess_meta_74
   type: vmess
-  server: 104.19.21.240
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.17
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_14
+      Host: ip2.1457230.xyz
+- name: vmess_meta_75
   type: vmess
-  server: 104.19.21.220
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.24
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_15
+      Host: ip2.1457230.xyz
+- name: vmess_meta_76
   type: vmess
-  server: 104.19.46.123
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.27
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_16
+      Host: ip2.1457230.xyz
+- name: vmess_meta_77
   type: vmess
-  server: 104.19.32.226
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.32
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_17
+      Host: ip2.1457230.xyz
+- name: vmess_meta_78
   type: vmess
-  server: 104.19.47.75
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.35
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_18
+      Host: ip2.1457230.xyz
+- name: vmess_meta_79
   type: vmess
-  server: 104.19.58.185
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.37
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_19
+      Host: ip2.1457230.xyz
+- name: vmess_meta_80
   type: vmess
-  server: 104.19.55.79
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.233.43
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_20
+      Host: ip2.1457230.xyz
+- name: vmess_meta_81
   type: vmess
-  server: 104.19.42.79
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.2
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_21
+      Host: ip2.1457230.xyz
+- name: vmess_meta_82
   type: vmess
-  server: 104.17.106.171
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.8
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_22
+      Host: ip2.1457230.xyz
+- name: vmess_meta_83
   type: vmess
-  server: 104.19.57.24
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.9
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_23
+      Host: ip2.1457230.xyz
+- name: vmess_meta_84
   type: vmess
-  server: 104.19.59.99
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.12
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_24
+      Host: ip2.1457230.xyz
+- name: vmess_meta_85
   type: vmess
-  server: 104.20.17.196
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.16
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_25
+      Host: ip2.1457230.xyz
+- name: vmess_meta_86
   type: vmess
-  server: 104.20.25.166
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.20
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_26
+      Host: ip2.1457230.xyz
+- name: vmess_meta_87
   type: vmess
-  server: 104.20.25.176
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.22
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_27
+      Host: ip2.1457230.xyz
+- name: vmess_meta_88
   type: vmess
-  server: 104.26.7.152
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.28
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_28
+      Host: ip2.1457230.xyz
+- name: vmess_meta_89
   type: vmess
-  server: 104.20.25.166
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.32
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_29
+      Host: ip2.1457230.xyz
+- name: vmess_meta_90
   type: vmess
-  server: 104.20.17.196
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  server: 172.64.166.33
+  port: 2086
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   network: ws
-  servername: cdn2.freegradely.xyz
+  servername: ip2.1457230.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: cdn2.freegradely.xyz
-- name: vmess_meta_30
-  type: vmess
-  server: 172.67.74.122
-  port: 2052
-  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: cdn2.freegradely.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: cdn2.freegradely.xyz
+      Host: ip2.1457230.xyz
+- name: tuic_meta_0
+  server: 51.159.34.216
+  port: 33445
+  type: tuic
+  uuid: 1607c99b-7df5-4b58-a315-a440f9afde40
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: vmess_meta_0
   type: vmess
   server: 104.19.51.232
@@ -1423,11 +1420,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.freegradely.xyz
+  servername: ip006.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.freegradely.xyz
+      Host: ip006.freegradely.xyz
 - name: vmess_meta_1
   type: vmess
   server: 23.227.38.5
@@ -1438,11 +1435,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.freegradely.xyz
+  servername: ip006.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.freegradely.xyz
+      Host: ip006.freegradely.xyz
 - name: vmess_meta_2
   type: vmess
   server: 104.16.148.244
@@ -1453,11 +1450,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.freegradely.xyz
+  servername: ip006.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.freegradely.xyz
+      Host: ip006.freegradely.xyz
 - name: vmess_meta_3
   type: vmess
   server: 104.19.38.62
@@ -1468,11 +1465,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.freegradely.xyz
+  servername: ip006.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.freegradely.xyz
+      Host: ip006.freegradely.xyz
 - name: vmess_meta_0
   type: vmess
   server: 104.19.32.46
@@ -1483,11 +1480,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.dtku47.xyz
+  servername: ip006.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.dtku47.xyz
+      Host: ip006.dtku47.xyz
 - name: vmess_meta_1
   type: vmess
   server: 23.227.38.6
@@ -1498,11 +1495,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.dtku47.xyz
+  servername: ip006.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.dtku47.xyz
+      Host: ip006.dtku47.xyz
 - name: vmess_meta_2
   type: vmess
   server: 104.19.51.232
@@ -1513,11 +1510,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.dtku47.xyz
+  servername: ip006.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.dtku47.xyz
+      Host: ip006.dtku47.xyz
 - name: vmess_meta_3
   type: vmess
   server: 104.19.38.62
@@ -1528,11 +1525,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip005.dtku47.xyz
+  servername: ip006.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip005.dtku47.xyz
+      Host: ip006.dtku47.xyz
 - name: vmess_meta_0
   type: vmess
   server: 104.19.46.233
@@ -1543,11 +1540,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip004.dtku47.xyz
+  servername: ip005.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip004.dtku47.xyz
+      Host: ip005.dtku47.xyz
 - name: vmess_meta_1
   type: vmess
   server: 23.227.38.6
@@ -1558,11 +1555,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip004.dtku47.xyz
+  servername: ip005.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip004.dtku47.xyz
+      Host: ip005.dtku47.xyz
 - name: vmess_meta_2
   type: vmess
   server: 104.19.51.232
@@ -1573,11 +1570,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip004.dtku47.xyz
+  servername: ip005.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip004.dtku47.xyz
+      Host: ip005.dtku47.xyz
 - name: vmess_meta_3
   type: vmess
   server: 104.19.38.62
@@ -1588,11 +1585,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip004.dtku47.xyz
+  servername: ip005.dtku47.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip004.dtku47.xyz
+      Host: ip005.dtku47.xyz
 - name: ss_meta_0
   type: ss
   server: 23.170.40.77
@@ -1638,11 +1635,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: vmess_meta_1
   type: vmess
   server: 23.227.38.8
@@ -1653,11 +1650,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: vmess_meta_2
   type: vmess
   server: 104.26.0.50
@@ -1668,11 +1665,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: vmess_meta_3
   type: vmess
   server: 104.19.38.88
@@ -1683,11 +1680,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: ip5-7.freegradely.xyz
+  servername: ip5-10.freegradely.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: ip5-7.freegradely.xyz
+      Host: ip5-10.freegradely.xyz
 - name: ss_meta_0
   type: ss
   server: 23.170.40.77
@@ -1822,37 +1819,37 @@ proxy-groups:
   - vmess_meta_58
   - vmess_meta_59
   - vmess_meta_60
-  - vmess_meta_0
-  - vmess_meta_1
-  - vmess_meta_2
-  - vmess_meta_3
-  - vmess_meta_4
-  - vmess_meta_5
-  - vmess_meta_6
-  - vmess_meta_7
-  - vmess_meta_8
-  - vmess_meta_9
-  - vmess_meta_10
-  - vmess_meta_11
-  - vmess_meta_12
-  - vmess_meta_13
-  - vmess_meta_14
-  - vmess_meta_15
-  - vmess_meta_16
-  - vmess_meta_17
-  - vmess_meta_18
-  - vmess_meta_19
-  - vmess_meta_20
-  - vmess_meta_21
-  - vmess_meta_22
-  - vmess_meta_23
-  - vmess_meta_24
-  - vmess_meta_25
-  - vmess_meta_26
-  - vmess_meta_27
-  - vmess_meta_28
-  - vmess_meta_29
-  - vmess_meta_30
+  - vmess_meta_61
+  - vmess_meta_62
+  - vmess_meta_63
+  - vmess_meta_64
+  - vmess_meta_65
+  - vmess_meta_66
+  - vmess_meta_67
+  - vmess_meta_68
+  - vmess_meta_69
+  - vmess_meta_70
+  - vmess_meta_71
+  - vmess_meta_72
+  - vmess_meta_73
+  - vmess_meta_74
+  - vmess_meta_75
+  - vmess_meta_76
+  - vmess_meta_77
+  - vmess_meta_78
+  - vmess_meta_79
+  - vmess_meta_80
+  - vmess_meta_81
+  - vmess_meta_82
+  - vmess_meta_83
+  - vmess_meta_84
+  - vmess_meta_85
+  - vmess_meta_86
+  - vmess_meta_87
+  - vmess_meta_88
+  - vmess_meta_89
+  - vmess_meta_90
+  - tuic_meta_0
   - vmess_meta_0
   - vmess_meta_1
   - vmess_meta_2
@@ -1945,37 +1942,37 @@ proxy-groups:
   - vmess_meta_58
   - vmess_meta_59
   - vmess_meta_60
-  - vmess_meta_0
-  - vmess_meta_1
-  - vmess_meta_2
-  - vmess_meta_3
-  - vmess_meta_4
-  - vmess_meta_5
-  - vmess_meta_6
-  - vmess_meta_7
-  - vmess_meta_8
-  - vmess_meta_9
-  - vmess_meta_10
-  - vmess_meta_11
-  - vmess_meta_12
-  - vmess_meta_13
-  - vmess_meta_14
-  - vmess_meta_15
-  - vmess_meta_16
-  - vmess_meta_17
-  - vmess_meta_18
-  - vmess_meta_19
-  - vmess_meta_20
-  - vmess_meta_21
-  - vmess_meta_22
-  - vmess_meta_23
-  - vmess_meta_24
-  - vmess_meta_25
-  - vmess_meta_26
-  - vmess_meta_27
-  - vmess_meta_28
-  - vmess_meta_29
-  - vmess_meta_30
+  - vmess_meta_61
+  - vmess_meta_62
+  - vmess_meta_63
+  - vmess_meta_64
+  - vmess_meta_65
+  - vmess_meta_66
+  - vmess_meta_67
+  - vmess_meta_68
+  - vmess_meta_69
+  - vmess_meta_70
+  - vmess_meta_71
+  - vmess_meta_72
+  - vmess_meta_73
+  - vmess_meta_74
+  - vmess_meta_75
+  - vmess_meta_76
+  - vmess_meta_77
+  - vmess_meta_78
+  - vmess_meta_79
+  - vmess_meta_80
+  - vmess_meta_81
+  - vmess_meta_82
+  - vmess_meta_83
+  - vmess_meta_84
+  - vmess_meta_85
+  - vmess_meta_86
+  - vmess_meta_87
+  - vmess_meta_88
+  - vmess_meta_89
+  - vmess_meta_90
+  - tuic_meta_0
   - vmess_meta_0
   - vmess_meta_1
   - vmess_meta_2
