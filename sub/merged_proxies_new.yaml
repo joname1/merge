@@ -1398,18 +1398,471 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip2.1457230.xyz
-- name: tuic_meta_0
-  server: 51.159.34.216
-  port: 33445
-  type: tuic
-  uuid: 1607c99b-7df5-4b58-a315-a440f9afde40
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: vmess_meta_0
+  type: vmess
+  server: 104.19.38.18
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_1
+  type: vmess
+  server: 104.26.0.66
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_2
+  type: vmess
+  server: 23.227.38.13
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_3
+  type: vmess
+  server: 104.19.38.22
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_4
+  type: vmess
+  server: 172.64.175.98
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_5
+  type: vmess
+  server: 172.64.99.32
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_6
+  type: vmess
+  server: 104.19.21.81
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_7
+  type: vmess
+  server: 172.64.175.223
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_8
+  type: vmess
+  server: 172.64.198.229
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_9
+  type: vmess
+  server: 172.64.194.96
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_10
+  type: vmess
+  server: 104.19.21.73
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_11
+  type: vmess
+  server: 104.19.123.31
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_12
+  type: vmess
+  server: 104.18.57.121
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_13
+  type: vmess
+  server: 104.19.21.240
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_14
+  type: vmess
+  server: 104.19.21.220
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_15
+  type: vmess
+  server: 104.19.46.123
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_16
+  type: vmess
+  server: 104.19.32.226
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_17
+  type: vmess
+  server: 104.19.47.75
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_18
+  type: vmess
+  server: 104.19.58.185
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_19
+  type: vmess
+  server: 104.19.55.79
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_20
+  type: vmess
+  server: 104.19.42.79
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_21
+  type: vmess
+  server: 104.17.106.171
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_22
+  type: vmess
+  server: 104.19.57.24
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_23
+  type: vmess
+  server: 104.19.59.99
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_24
+  type: vmess
+  server: 104.20.17.196
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_25
+  type: vmess
+  server: 104.20.25.166
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_26
+  type: vmess
+  server: 104.20.25.176
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_27
+  type: vmess
+  server: 104.26.7.152
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_28
+  type: vmess
+  server: 104.20.25.166
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_29
+  type: vmess
+  server: 104.20.17.196
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
+- name: vmess_meta_30
+  type: vmess
+  server: 172.67.74.122
+  port: 2052
+  uuid: d6b6d982-d52f-465a-b988-85670b23f64a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: cdn3.freegradely.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: cdn3.freegradely.xyz
 - name: vmess_meta_0
   type: vmess
   server: 104.19.51.232
@@ -1849,7 +2302,37 @@ proxy-groups:
   - vmess_meta_88
   - vmess_meta_89
   - vmess_meta_90
-  - tuic_meta_0
+  - vmess_meta_0
+  - vmess_meta_1
+  - vmess_meta_2
+  - vmess_meta_3
+  - vmess_meta_4
+  - vmess_meta_5
+  - vmess_meta_6
+  - vmess_meta_7
+  - vmess_meta_8
+  - vmess_meta_9
+  - vmess_meta_10
+  - vmess_meta_11
+  - vmess_meta_12
+  - vmess_meta_13
+  - vmess_meta_14
+  - vmess_meta_15
+  - vmess_meta_16
+  - vmess_meta_17
+  - vmess_meta_18
+  - vmess_meta_19
+  - vmess_meta_20
+  - vmess_meta_21
+  - vmess_meta_22
+  - vmess_meta_23
+  - vmess_meta_24
+  - vmess_meta_25
+  - vmess_meta_26
+  - vmess_meta_27
+  - vmess_meta_28
+  - vmess_meta_29
+  - vmess_meta_30
   - vmess_meta_0
   - vmess_meta_1
   - vmess_meta_2
@@ -1972,7 +2455,37 @@ proxy-groups:
   - vmess_meta_88
   - vmess_meta_89
   - vmess_meta_90
-  - tuic_meta_0
+  - vmess_meta_0
+  - vmess_meta_1
+  - vmess_meta_2
+  - vmess_meta_3
+  - vmess_meta_4
+  - vmess_meta_5
+  - vmess_meta_6
+  - vmess_meta_7
+  - vmess_meta_8
+  - vmess_meta_9
+  - vmess_meta_10
+  - vmess_meta_11
+  - vmess_meta_12
+  - vmess_meta_13
+  - vmess_meta_14
+  - vmess_meta_15
+  - vmess_meta_16
+  - vmess_meta_17
+  - vmess_meta_18
+  - vmess_meta_19
+  - vmess_meta_20
+  - vmess_meta_21
+  - vmess_meta_22
+  - vmess_meta_23
+  - vmess_meta_24
+  - vmess_meta_25
+  - vmess_meta_26
+  - vmess_meta_27
+  - vmess_meta_28
+  - vmess_meta_29
+  - vmess_meta_30
   - vmess_meta_0
   - vmess_meta_1
   - vmess_meta_2
