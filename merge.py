@@ -4,6 +4,7 @@ import urllib.request
 import yaml
 import codecs
 import logging
+import random
 
 # 提取节点
 def process_urls(url_file, processor):
@@ -56,7 +57,7 @@ def process_clash(data, index):
                         security = 'reality'
                     else:
                         security = 'tls'
-                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_meta_{index}"
+                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_meta_{str(random.randint(0,1000)) + index}"
 
                     merged_proxies.append(vless_meta)
 
@@ -79,7 +80,7 @@ def process_clash(data, index):
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
-                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":"vmess_meta_" + name.strip('dongtaiwang.com_'),"scy":scy,"sni":sni,"tls":security}
+                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":"vmess_meta_" + str(random.randint(0,1000)) + name.strip('dongtaiwang.com_'),"scy":scy,"sni":sni,"tls":security}
                     dataJson = json.dumps(vmess_format)
                     vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
                     merged_proxies.append(vmess_meta)

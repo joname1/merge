@@ -2,6 +2,7 @@ import yaml
 import json
 import urllib.request
 import logging
+import random
 
 # 提取节点
 def process_urls(url_file, processor):
@@ -24,7 +25,7 @@ def process_clash(data, index):
     content = yaml.safe_load(data)
     proxies = content.get('proxies', [])
     for i, proxy in enumerate(proxies):
-        proxy['name'] = f"{proxy['type']}_meta_{i}"
+        proxy['name'] = f"{proxy['type']}_meta_" + str(random.randint(0,1000)) + f"{i}"
     merged_proxies.extend(proxies)
 
 # sing-box
