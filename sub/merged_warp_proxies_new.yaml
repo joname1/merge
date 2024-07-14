@@ -2298,22 +2298,23 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip5-10.freegradely.xyz
-- name: ss_meta_0
-  type: ss
-  server: 23.170.40.77
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: CmUP/cj9LY2W4bsBUV7mG8ujmMcCOzt+b4un9xnLuro=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: K+NtA/8R8MTQ9vyZAd0kzUYJkwQmQBkUIQmwa2Po8cM=
-    version: 3
+- name: tuic_meta_0
+  server: www2.dtku44.xyz
+  port: 11224
+  type: tuic
+  uuid: 285524a5-18ae-4bf4-8e89-473dfdc3a212
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: hysteria_0
   type: hysteria
-  server: 62.210.243.131
-  port: 18702
-  ports: 18702
+  server: 104.192.224.139
+  port: 42113
+  ports: 42113
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -2325,9 +2326,9 @@ proxies:
   - h3
 - name: hysteria_1
   type: hysteria
-  server: 62.210.243.131
-  port: 18702
-  ports: 18702
+  server: 104.192.224.139
+  port: 42113
+  ports: 42113
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -2339,9 +2340,9 @@ proxies:
   - h3
 - name: hysteria_2
   type: hysteria
-  server: 62.210.243.131
-  port: 18702
-  ports: 18702
+  server: 104.192.224.139
+  port: 42113
+  ports: 42113
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -2353,9 +2354,9 @@ proxies:
   - h3
 - name: hysteria_3
   type: hysteria
-  server: 62.210.243.131
-  port: 18702
-  ports: 18702
+  server: 104.192.224.139
+  port: 42113
+  ports: 42113
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -2538,7 +2539,7 @@ proxy-groups:
   - vmess_meta_1
   - vmess_meta_2
   - vmess_meta_3
-  - ss_meta_0
+  - tuic_meta_0
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -2698,7 +2699,7 @@ proxy-groups:
   - vmess_meta_1
   - vmess_meta_2
   - vmess_meta_3
-  - ss_meta_0
+  - tuic_meta_0
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -2858,7 +2859,7 @@ proxy-groups:
   - vmess_meta_1
   - vmess_meta_2
   - vmess_meta_3
-  - ss_meta_0
+  - tuic_meta_0
   - hysteria_0
   - hysteria_1
   - hysteria_2
