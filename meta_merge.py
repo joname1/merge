@@ -1,9 +1,7 @@
-import yaml
-import json
+import yaml, json
 import urllib.request
-import logging
-import random
-
+import logging, random, uuid
+myID = uuid
 # 提取节点
 def process_urls(url_file, processor):
     try:
@@ -25,7 +23,7 @@ def process_clash(data, index):
     content = yaml.safe_load(data)
     proxies = content.get('proxies', [])
     for i, proxy in enumerate(proxies):
-        proxy['name'] = f"{proxy['type']}_meta_" + str(random.randint(0,1000)) + f"{i}"
+        proxy['name'] = f"{proxy['type']}_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
     merged_proxies.extend(proxies)
 
 # sing-box
@@ -42,7 +40,7 @@ def process_sb(data, index):
         server_name = json_data["outbounds"][1]["tls"]["server_name"]
         shadowtls_password = json_data["outbounds"][1]["password"]
         version = json_data["outbounds"][1]["version"]
-        name = f"shadowtls_{index}"
+        name = f"shadowtls_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
         # 创建当前网址的proxy字典
         proxy = {
             "name": name,
@@ -88,7 +86,7 @@ def process_hysteria(data, index):
         server_name = json_data["server_name"]
         alpn = json_data["alpn"]
         protocol = json_data["protocol"]
-        name = f"hysteria_{index}"
+        name = f"hy_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
 
         # 创建当前网址的proxy字典
         proxy = {
@@ -129,7 +127,7 @@ def process_hysteria2(data, index):
         fast_open = json_data["fastOpen"]
         insecure = json_data["tls"]["insecure"]
         sni = json_data["tls"]["sni"]
-        name = f"hysteria2_{index}"
+        name = f"hy2_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
 
         # 创建当前网址的proxy字典
         proxy = {
@@ -171,7 +169,7 @@ def process_xray(data, index):
             fingerprint = json_data["outbounds"][0]["streamSettings"]["realitySettings"]["fingerprint"]
             # udp转发
             isudp = True
-            name = f"reality_{index}"
+            name = f"reality_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{i}"
             
             # 根据network判断tcp
             if network == "tcp":

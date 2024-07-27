@@ -1,11 +1,7 @@
-import base64
-import json
+import base64, json
 import urllib.request
-import yaml
-import codecs
-import logging
-import random
-
+import yaml, codecs, logging, random, uuid
+myID = uuid
 # 提取节点
 def process_urls(url_file, processor):
     try:
@@ -57,7 +53,7 @@ def process_clash(data, index):
                         security = 'reality'
                     else:
                         security = 'tls'
-                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_meta_{str(random.randint(0,1000)) + index}"
+                    vless_meta =  f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}" + f"#vless_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
 
                     merged_proxies.append(vless_meta)
 
@@ -80,7 +76,7 @@ def process_clash(data, index):
                     ws_path = proxy.get('ws-opts', {}).get('path', '')
                     ws_headers_host = proxy.get('ws-opts', {}).get('headers', {}).get('Host', '')
 
-                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":"vmess_meta_" + str(random.randint(0,1000)) + name.strip('dongtaiwang.com_'),"scy":scy,"sni":sni,"tls":security}
+                    vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"ps":"vmess_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + name.strip('dongtaiwang.com_'),"scy":scy,"sni":sni,"tls":security}
                     dataJson = json.dumps(vmess_format)
                     vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
                     merged_proxies.append(vmess_meta)
@@ -96,7 +92,7 @@ def process_clash(data, index):
                     congestion = proxy.get("congestion-controller", "bbr")
                     alpn = proxy.get("alpn", [])[0] if proxy.get("alpn") and len(proxy["alpn"]) > 0 else None
                     #tuic_meta_neko = f"tuic://{server}:{port}?uuid={uuid}&version=5&password={password}&insecure={insecure}&alpn={alpn}&mode={udp_relay_mode}"
-                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}#tuic_meta_{index}"
+                    tuic_meta = f"tuic://{uuid}:{password}@{server}:{port}?sni={sni}&congestion_control={congestion}&udp_relay_mode={udp_relay_mode}&alpn={alpn}&allow_insecure={insecure}" + f"#tuic_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
                     merged_proxies.append(tuic_meta)
 
                 elif proxy['type'] == "hysteria2":
@@ -107,7 +103,7 @@ def process_clash(data, index):
                     obfs_password = proxy.get("obfs-password","")
                     sni = proxy.get("sni", "")
                     insecure = int(proxy.get("skip-cert-verify", 0))
-                    hy2_meta = f"hysteria2://{auth}@{server}:{port}?insecure={insecure}&sni={sni}&obfs={obfs}&obfs-password={obfs_password}#hysteria2_meta_{index}"
+                    hy2_meta = f"hysteria2://{auth}@{server}:{port}?insecure={insecure}&sni={sni}&obfs={obfs}&obfs-password={obfs_password}" + f"#hy2_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
                     merged_proxies.append(hy2_meta)
 
                 elif proxy['type'] == 'hysteria':
@@ -124,8 +120,8 @@ def process_clash(data, index):
                     fast_open = int(proxy.get("fast_open", 1))
                     auth = proxy.get("auth-str", "")
                     # 生成URL
-                    hysteria_meta = f"hysteria://{server}:{port}?peer={sni}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&mport={ports}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#hysteria_meta_{index}"
-                    merged_proxies.append(hysteria_meta)
+                    hy_meta = f"hysteria://{server}:{port}?peer={sni}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&mport={ports}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}" + f"#hy_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
+                    merged_proxies.append(hy_meta)
 
                 elif proxy['type'] == 'ssr':
                     name = proxy.get("name", "")
@@ -138,7 +134,7 @@ def process_clash(data, index):
                     protocol_param = proxy.get("protocol-param", "")
                     obfs_param = proxy.get("obfs-param", "")
                     # 生成URL
-                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=ssr_{index}"
+                    ssr_source=f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password}/?obfsparam={obfs_param}&protoparam={protocol_param}&remarks=" + f"ssr_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
                     
                     #ssr_source=base64.b64encode(ssr_source.encode()).decode()
                     ssr_meta = f"ssr://{ssr_source}"
@@ -151,7 +147,7 @@ def process_clash(data, index):
                     password = proxy.get("password", "")
                     cipher = proxy.get("cipher", "")
                     # 生成URL
-                    ss_source=f"{cipher}:{password}@{server}:{port}&remarks=ss_{index}"
+                    ss_source=f"{cipher}:{password}@{server}:{port}&remarks=" + f"#ss_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
                     
                     #ss_source=base64.b64encode(ss_source.encode()).decode()
                     ss_meta = f"ss://{ss_source}"
@@ -207,7 +203,7 @@ def process_hysteria(data, index):
         fast_open = int(json_data.get("fast_open", 0))
         auth = json_data.get("auth_str", "")
         # 生成URL
-        hysteria = f"hysteria://{server}?peer={server_name}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}#hysteria_{index}"
+        hysteria = f"hysteria://{server}?peer={server_name}&auth={auth}&insecure={insecure}&upmbps={up_mbps}&downmbps={down_mbps}&alpn={alpn}&obfs={obfs}&protocol={protocol}&fastopen={fast_open}" + f"#hy_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
         merged_proxies.append(hysteria)
 
 
@@ -225,7 +221,7 @@ def process_hysteria2(data, index):
         sni = json_data["tls"]["sni"]
         auth = json_data["auth"]
         # 生成URL
-        hysteria2 = f"hysteria2://{auth}@{server}?insecure={insecure}&sni={sni}#hysteria2_{index}"
+        hysteria2 = f"hysteria2://{auth}@{server}?insecure={insecure}&sni={sni}" + f"#hy2_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
 
         merged_proxies.append(hysteria2)
     except Exception as e:
@@ -275,7 +271,7 @@ def process_xray(data, index):
             ws_path = ws_settings.get("path", "")
             ws_headers_host = ws_settings.get("headers", {}).get("Host", "")
 
-            xray_proxy = f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#vless_{index}"
+            xray_proxy = f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}" + f"#vless_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
 
             # 将当前proxy字典添加到所有proxies列表中
             merged_proxies.append(xray_proxy)
@@ -317,7 +313,7 @@ def process_xray(data, index):
             ws_path = ws_settings.get("path", "")
             ws_headers_host = ws_settings.get("headers", {}).get("Host", "")
 
-            xray_vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"allowInsecure":insecure,"sni":sni,"tls":security,"ps": "xray_vmess_" + str(index)}
+            xray_vmess_format = {"add":server,"aid":alterId,"alpn":"","host":ws_headers_host,"id":uuid,"net":network,"path":ws_path,"port":port,"allowInsecure":insecure,"sni":sni,"tls":security,"ps": "xray_vmess_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"}
             dataJson = json.dumps(xray_vmess_format)
             xray_vmess_meta = "vmess://" + base64.b64encode(dataJson.encode('utf-8')).decode('utf-8')
 

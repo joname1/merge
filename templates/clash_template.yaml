@@ -25,7 +25,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-    - { name: 'DEMO', type: trojan, server: 1, port: 1, password: 1, udp: true, sni: 1.com, skip-cert-verify: true }
+    - { name: 'DEMO', type: ss, server: 1, port: 1, password: 1}
 proxy-groups:
   - name: 节点选择
     type: select
