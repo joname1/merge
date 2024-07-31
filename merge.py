@@ -179,7 +179,7 @@ def process_sb(data, index):
 
         ss = f"{method}:{password}@{server}:{server_port}"
         shadowtls = f'{{"version": "{version}", "host": "{host}","password":{shadowtls_password}}}'
-        shadowtls_proxy = "ss://"+base64.b64encode(ss.encode()).decode()+"?shadow-tls="+base64.b64encode(shadowtls.encode()).decode()+f"#shadowtls_{index}"
+        shadowtls_proxy = "sb://"+base64.b64encode(ss.encode()).decode()+"?shadow-tls="+base64.b64encode(shadowtls.encode()).decode()+ f"#sb_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
         
         merged_proxies.append(shadowtls_proxy)
 
@@ -347,8 +347,8 @@ v2ray_content = []
 # 处理 clash URLs
 process_urls('./urls/clash_urls.txt', process_clash)
 
-# 处理 shadowtls URLs TODO
-# process_urls('./urls/sb_urls.txt', process_sb)
+# 处理 shadowtls URLs
+process_urls('./urls/sb_urls.txt', process_sb)
 
 # 处理 naive URLs TODO
 # process_urls('./urls/naiverproxy_urls.txt', process_naive)

@@ -40,7 +40,7 @@ def process_sb(data, index):
         server_name = json_data["outbounds"][1]["tls"]["server_name"]
         shadowtls_password = json_data["outbounds"][1]["password"]
         version = json_data["outbounds"][1]["version"]
-        name = f"shadowtls_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
+        name = f"sb_" + myID.uuid4().hex[27:] + str(random.randint(0,10)) + f"{index}"
         # 创建当前网址的proxy字典
         proxy = {
             "name": name,
