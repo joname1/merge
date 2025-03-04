@@ -2,8 +2,8 @@ name: Parallel URL Fetch
 
 on:
   #如要使用定时运行，请把下面两行开头的#符号删除
-  #schedule:
-  #- cron: '*/10 * * * *' # 每10分钟执行一次（公开库每月2000分钟运行时长，每天64分钟）
+  schedule:
+  - cron: '*/180 * * * *'
   workflow_dispatch: 
 
 jobs:
@@ -20,13 +20,6 @@ jobs:
       # 变量值填写示例：http://保活或重启网页1 http://保活或重启网页2 http://保活或重启网页3 ………
       run: |
         IFS=$',， ' read -r -a http <<< "${{ secrets.http }}"
-         echo "*****************************************************"
-         echo "甬哥Github项目  ：github.com/yonggekkk"
-         echo "甬哥Blogger博客 ：ygkkk.blogspot.com"
-         echo "甬哥YouTube频道 ：www.youtube.com/@ygkkk"
-         echo "🎉Github定时运行serv00保活网页🎉"
-         echo "请先确认已成功安装甬哥Serv00本地SSH三协议一键脚本"
-         echo "脚本地址：https://github.com/yonggekkk/sing-box-yg"
          echo "*****************************************************"
         for url in "${http[@]}"; do
           response=$(curl -sk "$url" || true)
