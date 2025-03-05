@@ -3,7 +3,7 @@ name: Parallel URL Fetch
 on:
   #如要使用定时运行，请把下面两行开头的#符号删除
   schedule:
-  - cron: '*/180 * * * *'
+  - cron: '0 1 * * *'
   workflow_dispatch: 
 
 jobs:
@@ -13,6 +13,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+  
+    - name: Set timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
 
     - name: Fetch URLs in parallel
       # secrets设置，变量名称：http
